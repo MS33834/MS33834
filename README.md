@@ -410,6 +410,21 @@ GitHub 个人统计、常用语言、连续贡献记录。
 
 <br>
 
+<!-- hand-crafted constellation divider -->
+<div align="center">
+<svg viewBox="0 0 860 28" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:860px;">
+  <line x1="0" y1="14" x2="360" y2="14" stroke="#25335e" stroke-width="1.2"/>
+  <line x1="500" y1="14" x2="860" y2="14" stroke="#25335e" stroke-width="1.2"/>
+  <circle cx="430" cy="14" r="4" fill="#ffe9a8" opacity="0.9"/>
+  <circle cx="400" cy="14" r="2" fill="#4a6fa5" opacity="0.7"/>
+  <circle cx="460" cy="14" r="2" fill="#4a6fa5" opacity="0.7"/>
+  <line x1="404" y1="14" x2="426" y2="14" stroke="#4a6fa5" stroke-width="0.8" opacity="0.5"/>
+  <line x1="434" y1="14" x2="456" y2="14" stroke="#4a6fa5" stroke-width="0.8" opacity="0.5"/>
+</svg>
+</div>
+
+<br>
+
 ## 🐍 Constellation Snake
 
 <details>
