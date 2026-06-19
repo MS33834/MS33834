@@ -166,15 +166,20 @@ def get_tech_stack():
 
 
 def get_top_repos(limit=4):
-    """Fetch user's most starred repos."""
-    url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={limit}"
+    """Fetch user's most starred repos, excluding the profile repo itself."""
+    # Fetch more than needed to compensate for excluded repos
+    fetch_count = max(limit * 2, 10)
+    url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={fetch_count}"
     try:
         text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
         repos = json.loads(text)
-        if not repos:
+        # Exclude the profile repo (same name as username) and forks
+        filtered = [r for r in repos if r["name"].lower() != GITHUB_USER.lower() and not r.get("fork")]
+        filtered = filtered[:limit]
+        if not filtered:
             return "_No public repositories found._"
         cards = []
-        for r in repos:
+        for r in filtered:
             name = r["name"]
             url_repo = r["html_url"]
             cards.append(
