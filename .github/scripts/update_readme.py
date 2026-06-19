@@ -1,0 +1,301 @@
+import json
+import os
+import re
+import urllib.error
+import urllib.request
+from datetime import datetime
+
+README_PATH = "README.md"
+GITHUB_USER = "MS33834"
+CSDN_USER = "weixin_56622231"
+
+DEFAULT_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+}
+
+
+def fetch(url, headers=None):
+    """Fetch URL and return decoded text."""
+    merged = {**DEFAULT_HEADERS, **(headers or {})}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token and "github.com" in url:
+        merged["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, headers=merged)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read().decode("utf-8")
+
+
+def parse_xml_items(xml_text):
+    """Parse CSDN RSS XML without external dependencies."""
+    items = []
+    # Split by <item> to avoid full namespace handling
+    raw_items = xml_text.split("<item>")[1:]
+    for raw in raw_items:
+        if "</item>" not in raw:
+            continue
+        body = raw.split("</item>")[0]
+
+        def get_tag(tag):
+            start = body.find(f"<{tag}>")
+            end = body.find(f"</{tag}>")
+            if start == -1 or end == -1:
+                return ""
+            return body[start + len(tag) + 2 : end].strip()
+
+        title = get_tag("title").replace("<![CDATA[", "").replace("]]>", "")
+        link = get_tag("link").replace("<![CDATA[", "").replace("]]>", "")
+        pub_date = get_tag("pubDate").replace("<![CDATA[", "").replace("]]>", "")
+        items.append({"title": title, "link": link, "date": pub_date})
+    return items
+
+
+def get_csdn_posts(limit=5):
+    """Fetch latest CSDN posts."""
+    url = f"https://blog.csdn.net/{CSDN_USER}/rss/list?spm=1001.2014.3001.5112"
+    try:
+        xml_text = fetch(url)
+        posts = parse_xml_items(xml_text)
+        return posts[:limit]
+    except Exception as e:
+        print(f"CSDN fetch failed: {e}")
+        return []
+
+
+def format_csdn_posts(posts):
+    """Format CSDN posts to markdown."""
+    if not posts:
+        return "_Unable to fetch the latest articles right now. Please check back later._"
+    lines = ["<div align=\"center\">\n", "<table>"]
+    for idx, p in enumerate(posts, 1):
+        date_str = ""
+        if p["date"]:
+            try:
+                dt = datetime.strptime(p["date"], "%a, %d %b %Y %H:%M:%S %z")
+                date_str = dt.strftime("%Y-%m-%d")
+            except Exception:
+                date_str = p["date"][:16]
+        lines.append(
+            f"  <tr><td style='color:#4a6fa5; font-size:16px; width:28px;'>✦</td>"
+            f"<td><a href='{p['link']}' target='_blank' style='font-size:17px; color:#c9d6f2; text-decoration:none;'>"
+            f"{p['title']}</a><br><sub style='color:#6b7fa3;'>{date_str}</sub></td></tr>"
+        )
+    lines.extend(["</table>", "</div>"])
+    return "\n".join(lines)
+
+
+def get_english_quote():
+    """Fetch a daily English quote from type.fit."""
+    try:
+        text = fetch("https://type.fit/api/quotes")
+        quotes = json.loads(text)
+        if not quotes:
+            raise ValueError("empty quotes")
+        idx = datetime.now().timetuple().tm_yday % len(quotes)
+        q = quotes[idx]
+        return q.get("text", "").strip(), q.get("author", "Unknown").strip()
+    except Exception as e:
+        print(f"English quote fetch failed: {e}")
+        return "Keep shining, even when no one is watching.", "Morning Star"
+
+
+def get_chinese_quote():
+    """Fetch a daily Chinese quote from hitokoto."""
+    try:
+        text = fetch("https://v1.hitokoto.cn/?c=d&c=i&encode=json")
+        data = json.loads(text)
+        hitokoto = data.get("hitokoto", "").strip()
+        source = data.get("from", "").strip()
+        if not hitokoto:
+            raise ValueError("empty hitokoto")
+        return hitokoto, source
+    except Exception as e:
+        print(f"Chinese quote fetch failed: {e}")
+        return "在黎明之前，保持发光。", "启明星"
+
+
+def format_quote(en_text, en_author, zh_text, zh_source):
+    """Format daily quote section with collapsible Chinese translation."""
+    source_display = f"《{zh_source}》" if zh_source else ""
+    return (
+        '<div align="center">\n\n'
+        f'<p style="font-size: 24px; color: #ffe9a8; font-style: italic; margin: 18px 0; line-height: 1.5;">"{en_text}"</p>\n'
+        f'<p style="font-size: 17px; color: #8fa4d3;">— {en_author}</p>\n\n'
+        '<details>\n'
+        '<summary style="font-size: 17px; color: #c9d6f2; cursor: pointer; padding: 8px;">🌙 中文</summary>\n\n'
+        f'<p style="font-size: 22px; color: #fff8dc; margin: 14px 0; line-height: 1.5;">{zh_text}</p>\n'
+        f'<p style="font-size: 16px; color: #8fa4d3;">— {source_display}</p>\n\n'
+        '</details>\n\n'
+        '</div>'
+    )
+
+
+def get_tech_stack():
+    """Detect tech stack from user's public repos."""
+    url = f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100"
+    try:
+        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+        repos = json.loads(text)
+        if not repos:
+            return "_No public repository data available._"
+        lang_counts = {}
+        for r in repos:
+            lang = r.get("language")
+            if lang:
+                lang_counts[lang] = lang_counts.get(lang, 0) + 1
+        sorted_langs = sorted(lang_counts.items(), key=lambda x: x[1], reverse=True)[:8]
+        badge_colors = {
+            "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
+            "Rust": "000000", "Go": "00ADD8", "Java": "007396", "C++": "00599C",
+            "C": "A8B9CC", "HTML": "E34F26", "CSS": "1572B6", "Shell": "89E051",
+            "Vue": "4FC08D", "React": "61DAFB", "Swift": "F05138", "Kotlin": "7F52FF",
+            "Ruby": "CC342D", "PHP": "777BB4", "Scala": "DC322F", "Dart": "0175C2"
+        }
+        badges = []
+        for lang, _ in sorted_langs:
+            color = badge_colors.get(lang, "c9d6f2")
+            logo = lang.lower().replace("+", "plusplus").replace("#", "sharp").replace(" ", "")
+            badges.append(
+                f"![{lang}](https://img.shields.io/badge/{lang}-{color}?style=for-the-badge"
+                f"&logo={logo}&logoColor=ffffff&labelColor=0d1535)"
+            )
+        badge_line = " ".join(badges) if badges else ""
+        return f'<div align="center">\n\n{badge_line}\n\n</div>' if badge_line else "_No public repository data available._"
+    except Exception as e:
+        print(f"Tech stack fetch failed: {e}")
+        return "_Unable to fetch the tech stack right now._"
+
+
+def get_top_repos(limit=4):
+    """Fetch user's most starred repos."""
+    url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={limit}"
+    try:
+        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+        repos = json.loads(text)
+        if not repos:
+            return "_No public repositories found._"
+        cards = []
+        for r in repos:
+            name = r["name"]
+            url_repo = r["html_url"]
+            cards.append(
+                f'<a href="{url_repo}" target="_blank">'
+                f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={GITHUB_USER}&repo={name}'
+                '&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2'
+                f'&icon_color=4a6fa5&border_color=25335e" alt="{name}"/>'
+                '</a>'
+            )
+        # Build a 2x2 grid for comfortable layout
+        grid = [
+            "<div align=\"center\">",
+            "<table>",
+            "  <tr>",
+            f"    <td>{cards[0]}</td>",
+            f"    <td>{cards[1] if len(cards) > 1 else ''}</td>",
+            "  </tr>",
+            "  <tr>",
+            f"    <td>{cards[2] if len(cards) > 2 else ''}</td>",
+            f"    <td>{cards[3] if len(cards) > 3 else ''}</td>",
+            "  </tr>",
+            "</table>",
+            "</div>",
+        ]
+        return "\n".join(grid)
+    except Exception as e:
+        print(f"Top repos fetch failed: {e}")
+        return "_Unable to fetch repository data right now._"
+
+
+def get_trending_repos(limit=4):
+    """Fetch popular repos as a proxy for trending."""
+    url = f"https://api.github.com/search/repositories?q=stars:>5000&sort=stars&order=desc&per_page={limit}"
+    try:
+        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+        data = json.loads(text)
+        items = data.get("items", [])
+        if not items:
+            return "_Unable to fetch trending repositories right now._"
+        rows = []
+        for r in items:
+            name = r["full_name"]
+            desc = r.get("description") or "No description"
+            stars = r["stargazers_count"]
+            url_repo = r["html_url"]
+            short_desc = desc[:55] + "..." if len(desc) > 55 else desc
+            rows.append(f"| [{name}]({url_repo}) | {short_desc} | ⭐ {stars:,} |")
+        header = "| Repository | Description | Stars |\n|------------|-------------|-------|"
+        return header + "\n" + "\n".join(rows)
+    except Exception as e:
+        print(f"Trending fetch failed: {e}")
+        return "_Unable to fetch trending repositories right now._"
+
+
+def update_section(content, marker_start, marker_end, new_content):
+    """Replace content between markers."""
+    pattern = re.compile(
+        f"({re.escape(marker_start)}).*?({re.escape(marker_end)})",
+        re.DOTALL,
+    )
+    if not pattern.search(content):
+        print(f"Marker {marker_start} not found, skipping.")
+        return content
+    return pattern.sub(f"\\1\n{new_content}\n\\2", content)
+
+
+def main():
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Update CSDN posts
+    posts = get_csdn_posts()
+    content = update_section(
+        content,
+        "<!-- CSDN-POSTS-START -->",
+        "<!-- CSDN-POSTS-END -->",
+        format_csdn_posts(posts),
+    )
+
+    # Update daily quote
+    en_text, en_author = get_english_quote()
+    zh_text, zh_source = get_chinese_quote()
+    content = update_section(
+        content,
+        "<!-- DAILY-QUOTE-START -->",
+        "<!-- DAILY-QUOTE-END -->",
+        format_quote(en_text, en_author, zh_text, zh_source),
+    )
+
+    # Update tech stack
+    tech = get_tech_stack()
+    content = update_section(
+        content,
+        "<!-- TECH-STACK-START -->",
+        "<!-- TECH-STACK-END -->",
+        tech,
+    )
+
+    # Update top repos
+    top = get_top_repos()
+    content = update_section(
+        content,
+        "<!-- TOP-REPOS-START -->",
+        "<!-- TOP-REPOS-END -->",
+        top,
+    )
+
+    # Update trending repos
+    trending = get_trending_repos()
+    content = update_section(
+        content,
+        "<!-- TRENDING-REPOS-START -->",
+        "<!-- TRENDING-REPOS-END -->",
+        trending,
+    )
+
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("README.md updated successfully.")
+
+
+if __name__ == "__main__":
+    main()
