@@ -157,13 +157,23 @@
 
 ## ✨ About Me
 
+<div align="center">
+
+# I am **badhope**
+
+<img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=600&size=24&duration=2200&pause=600&color=FFE9A8&center=true&vCenter=true&width=700&lines=积极的开源社区贡献者;优秀的全栈开发者;技巧娴熟的AI使用者;新技术时代的探索者;在代码与星光之间寻找答案" alt="badhope typing"/>
+
+</div>
+
+<br>
+
 <details>
 <summary>🌙 中文</summary>
 
 <div align="center">
 
 <pre style="font-size: 16px; line-height: 1.8; background: #0d1535; color: #c9d6f2; padding: 20px; border-radius: 12px; border: 1px solid #25335e;">
-名字： MS33834
+名字： MS33834 / badhope
 状态： 收集微光，等待黎明
 位置： 某片星空之下
 博客： CSDN · weixin_56622231
@@ -178,7 +188,7 @@
 <div align="center">
 
 <pre style="font-size: 16px; line-height: 1.8; background: #0d1535; color: #c9d6f2; padding: 20px; border-radius: 12px; border: 1px solid #25335e;">
-name: MS33834
+name: MS33834 / badhope
 mood: collecting sparks, waiting for dawn
 location: somewhere under the stars
 blog:  CSDN · weixin_56622231
