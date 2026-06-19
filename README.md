@@ -305,8 +305,8 @@ blog:  CSDN · weixin_56622231
 <details>
 <summary style="font-size: 21px; color: #c9d6f2; cursor: pointer; padding: 12px;">🌙 中文</summary>
 
-<p style="font-size: 26px; color: #fff8dc; margin: 18px 0; line-height: 1.65;">风乍起。合当奋意向人生。</p>
-<p style="font-size: 19px; color: #8fa4d3;">— 《起风了》</p>
+<p style="font-size: 26px; color: #fff8dc; margin: 18px 0; line-height: 1.65;">为遇一人而入红尘，人去我亦去，此生不留尘。</p>
+<p style="font-size: 19px; color: #8fa4d3;">— 《魔道祖师》</p>
 
 </details>
 
@@ -377,12 +377,12 @@ GitHub 个人统计、常用语言、连续贡献记录。
 <div align="center">
 <table>
   <tr>
-    <td><a href="https://github.com/MS33834/autoship-cli" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=autoship-cli&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="autoship-cli"/></a></td>
-    <td><a href="https://github.com/MS33834/DU" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=DU&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="DU"/></a></td>
+    <td><a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="urban-pulse"/></a></td>
+    <td><a href="https://github.com/MS33834/AI-SKILL" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=AI-SKILL&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="AI-SKILL"/></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/MS33834/taskflow" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=taskflow&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="taskflow"/></a></td>
-    <td><a href="https://github.com/MS33834/scholarhub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=scholarhub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="scholarhub"/></a></td>
+    <td><a href="https://github.com/MS33834/financial-agent" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=financial-agent&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="financial-agent"/></a></td>
+    <td><a href="https://github.com/MS33834/autoship-cli" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=autoship-cli&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="autoship-cli"/></a></td>
   </tr>
 </table>
 </div>
@@ -402,10 +402,10 @@ GitHub 个人统计、常用语言、连续贡献记录。
 <!-- TRENDING-REPOS-START -->
 | Repository | Description | Stars |
 |------------|-------------|-------|
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technolo... | ⭐ 517,157 |
-| [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 😎 Awesome lists about all kinds of interesting topics | ⭐ 476,914 |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | freeCodeCamp.org's open-source codebase and curriculum.... | ⭐ 449,618 |
-| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | ⭐ 442,649 |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technolo... | ⭐ 517,406 |
+| [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 😎 Awesome lists about all kinds of interesting topics | ⭐ 477,125 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | freeCodeCamp.org's open-source codebase and curriculum.... | ⭐ 449,794 |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | ⭐ 442,850 |
 <!-- TRENDING-REPOS-END -->
 
 <br>
