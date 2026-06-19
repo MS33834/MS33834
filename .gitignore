@@ -1,0 +1,8 @@
+.github_token
+*.token
+.env
+.env.local
+secrets/
+__pycache__/
+*.pyc
+.DS_Store
