@@ -75,24 +75,23 @@ def format_csdn_posts(posts):
             except Exception:
                 date_str = p["date"][:16]
         lines.append(
-            f"  <tr><td style='color:#4a6fa5; font-size:16px; width:28px;'>✦</td>"
-            f"<td><a href='{p['link']}' target='_blank' style='font-size:17px; color:#c9d6f2; text-decoration:none;'>"
-            f"{p['title']}</a><br><sub style='color:#6b7fa3;'>{date_str}</sub></td></tr>"
+            f"  <tr><td style='color:#4a6fa5; font-size:20px; width:36px;'>✦</td>"
+            f"<td><a href='{p['link']}' target='_blank' style='font-size:21px; color:#c9d6f2; text-decoration:none;'>"
+            f"{p['title']}</a><br><sub style='color:#6b7fa3; font-size:17px;'>{date_str}</sub></td></tr>"
         )
     lines.extend(["</table>", "</div>"])
     return "\n".join(lines)
 
 
 def get_english_quote():
-    """Fetch a daily English quote from type.fit."""
+    """Fetch a daily English quote from ZenQuotes (open-source API)."""
     try:
-        text = fetch("https://type.fit/api/quotes")
+        text = fetch("https://zenquotes.io/api/today")
         quotes = json.loads(text)
         if not quotes:
             raise ValueError("empty quotes")
-        idx = datetime.now().timetuple().tm_yday % len(quotes)
-        q = quotes[idx]
-        return q.get("text", "").strip(), q.get("author", "Unknown").strip()
+        q = quotes[0]
+        return q.get("q", "").strip(), q.get("a", "Unknown").strip()
     except Exception as e:
         print(f"English quote fetch failed: {e}")
         return "Keep shining, even when no one is watching.", "Morning Star"
@@ -118,12 +117,12 @@ def format_quote(en_text, en_author, zh_text, zh_source):
     source_display = f"《{zh_source}》" if zh_source else ""
     return (
         '<div align="center">\n\n'
-        f'<p style="font-size: 24px; color: #ffe9a8; font-style: italic; margin: 18px 0; line-height: 1.5;">"{en_text}"</p>\n'
-        f'<p style="font-size: 17px; color: #8fa4d3;">— {en_author}</p>\n\n'
+        f'<p style="font-size: 28px; color: #ffe9a8; font-style: italic; margin: 24px 0; line-height: 1.65;">"{en_text}"</p>\n'
+        f'<p style="font-size: 21px; color: #8fa4d3;">— {en_author}</p>\n\n'
         '<details>\n'
-        '<summary style="font-size: 17px; color: #c9d6f2; cursor: pointer; padding: 8px;">🌙 中文</summary>\n\n'
-        f'<p style="font-size: 22px; color: #fff8dc; margin: 14px 0; line-height: 1.5;">{zh_text}</p>\n'
-        f'<p style="font-size: 16px; color: #8fa4d3;">— {source_display}</p>\n\n'
+        '<summary style="font-size: 21px; color: #c9d6f2; cursor: pointer; padding: 12px;">🌙 中文</summary>\n\n'
+        f'<p style="font-size: 26px; color: #fff8dc; margin: 18px 0; line-height: 1.65;">{zh_text}</p>\n'
+        f'<p style="font-size: 19px; color: #8fa4d3;">— {source_display}</p>\n\n'
         '</details>\n\n'
         '</div>'
     )
@@ -143,23 +142,25 @@ def get_tech_stack():
             if lang:
                 lang_counts[lang] = lang_counts.get(lang, 0) + 1
         sorted_langs = sorted(lang_counts.items(), key=lambda x: x[1], reverse=True)[:8]
-        badge_colors = {
-            "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
-            "Rust": "000000", "Go": "00ADD8", "Java": "007396", "C++": "00599C",
-            "C": "A8B9CC", "HTML": "E34F26", "CSS": "1572B6", "Shell": "89E051",
-            "Vue": "4FC08D", "React": "61DAFB", "Swift": "F05138", "Kotlin": "7F52FF",
-            "Ruby": "CC342D", "PHP": "777BB4", "Scala": "DC322F", "Dart": "0175C2"
+        # Use skillicons.dev for a less generic / more crafted look
+        icon_map = {
+            "Python": "py", "JavaScript": "js", "TypeScript": "ts",
+            "Rust": "rust", "Go": "go", "Java": "java", "C++": "cpp",
+            "C": "c", "HTML": "html", "CSS": "css", "Shell": "bash",
+            "Vue": "vue", "React": "react", "Swift": "swift", "Kotlin": "kotlin",
+            "Ruby": "ruby", "PHP": "php", "Scala": "scala", "Dart": "dart"
         }
-        badges = []
+        icons = []
         for lang, _ in sorted_langs:
-            color = badge_colors.get(lang, "c9d6f2")
-            logo = lang.lower().replace("+", "plusplus").replace("#", "sharp").replace(" ", "")
-            badges.append(
-                f"![{lang}](https://img.shields.io/badge/{lang}-{color}?style=for-the-badge"
-                f"&logo={logo}&logoColor=ffffff&labelColor=0d1535)"
-            )
-        badge_line = " ".join(badges) if badges else ""
-        return f'<div align="center">\n\n{badge_line}\n\n</div>' if badge_line else "_No public repository data available._"
+            icon = icon_map.get(lang, lang.lower().replace("+", "plusplus").replace("#", "sharp").replace(" ", ""))
+            icons.append(icon)
+        icons_str = ",".join(icons)
+        return (
+            '<div align="center">\n\n'
+            f'<img src="https://skillicons.dev/icons?i={icons_str}&theme=dark&perline=8" '
+            f'alt="tech stack" style="max-width: 720px;"/>\n\n'
+            '</div>'
+        )
     except Exception as e:
         print(f"Tech stack fetch failed: {e}")
         return "_Unable to fetch the tech stack right now._"
