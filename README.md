@@ -56,8 +56,8 @@
 <details>
 <summary>🌙 中文</summary>
 
-> 如果有来生，要做一只鸟，飞越永恒，没有迷途的苦恼。  
-> — 《说给自己听》
+> 在永恒与虚无之间，为你沉默。  
+> — 《请以你的名字呼唤我》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -161,7 +161,7 @@
 | [`.github/workflows/mirror-to-gitcode.yml`](.github/workflows/mirror-to-gitcode.yml) | 每次 push 到 `main` | 自动把 `main` 分支同步到 [GitCode 镜像](https://gitcode.com/badhope/MS33834) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-20 22:49 UTC_
+_最后更新 / Last updated: 2026-06-20 22:55 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
