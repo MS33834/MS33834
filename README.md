@@ -104,8 +104,8 @@
 <details>
 <summary>🌙 中文</summary>
 
-> 金风玉露一相逢，便胜却、人间无数。  
-> — 《鹊桥仙·纤云弄巧》
+> 夜雨声烦以极其强硬的姿态，骑士般地护卫在了索克萨身前。  
+> — 《全职高手》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -117,7 +117,7 @@
 <!-- TECH-STACK-START -->
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,py,vue,js&theme=dark&perline=8" alt="tech stack" style="max-width: 720px;"/>
+<img src="https://skillicons.dev/icons?i=py,ts,vue,js&theme=dark&perline=8" alt="tech stack" style="max-width: 720px;"/>
 
 </div>
 <!-- TECH-STACK-END -->
@@ -149,12 +149,12 @@
 <div align="center">
 <table>
   <tr>
-    <td><a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="miru-index"/></a></td>
-    <td><a href="https://github.com/MS33834/compass" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=compass&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="compass"/></a></td>
+    <td><a href="https://github.com/MS33834/EmpValue-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=EmpValue-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="EmpValue-AI"/></a></td>
+    <td><a href="https://github.com/MS33834/TutorLoop-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=TutorLoop-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="TutorLoop-AI"/></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="urban-pulse"/></a></td>
-    <td><a href="https://github.com/MS33834/AI-SKILL" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=AI-SKILL&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="AI-SKILL"/></a></td>
+    <td><a href="https://github.com/MS33834/ProxieHub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=ProxieHub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="ProxieHub"/></a></td>
+    <td><a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="miru-index"/></a></td>
   </tr>
 </table>
 </div>
@@ -167,10 +167,10 @@
 <!-- TRENDING-REPOS-START -->
 | Repository | Description | Stars |
 |------------|-------------|-------|
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technolo... | ⭐ 517,505 |
-| [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 😎 Awesome lists about all kinds of interesting topics | ⭐ 477,219 |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | freeCodeCamp.org's open-source codebase and curriculum.... | ⭐ 449,861 |
-| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | ⭐ 442,991 |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technolo... | ⭐ 517,718 |
+| [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 😎 Awesome lists about all kinds of interesting topics | ⭐ 477,392 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | freeCodeCamp.org's open-source codebase and curriculum.... | ⭐ 449,953 |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | ⭐ 443,128 |
 <!-- TRENDING-REPOS-END -->
 
 ---
