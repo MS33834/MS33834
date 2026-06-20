@@ -1,89 +1,39 @@
 <div align="center">
 
-<!-- HERO-SVG-START -->
-<svg viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width: 860px;">
-  <defs>
-    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#02030a"/>
-      <stop offset="45%" stop-color="#081029"/>
-      <stop offset="100%" stop-color="#1a2752"/>
-    </linearGradient>
-    <radialGradient id="morningGlow" cx="75%" cy="22%" r="55%">
-      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.45"/>
-      <stop offset="40%" stop-color="#7b9bcf" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#030511" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="starGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <rect width="860" height="320" fill="url(#sky)" rx="16"/>
-  <rect width="860" height="320" fill="url(#morningGlow)" rx="16"/>
+# MS33834 / badhope
 
-  <!-- big star -->
-  <g transform="translate(640, 70)">
-    <circle r="22" fill="#ffe9a8" opacity="0.15"/>
-    <circle r="12" fill="#ffe9a8" opacity="0.85" filter="url(#starGlow)"/>
-    <path d="M0,-28 L2,-12 L18,-10 L4,0 L10,16 L0,6 L-10,16 L-4,0 L-18,-10 L-2,-12 Z" fill="#fff8dc" opacity="0.9" filter="url(#starGlow)"/>
-  </g>
+### 全栈开发者 · AI 应用探索者 · 开源爱好者
 
-  <!-- scattered small stars -->
-  <g fill="#c9d6f2" opacity="0.7">
-    <circle cx="90" cy="60" r="2"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="180" cy="120" r="1.5"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="300" cy="50" r="2"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="420" cy="90" r="1.5"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="520" cy="150" r="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="180" r="1.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="110" cy="240" r="2"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="740" cy="260" r="2"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
-  </g>
+**在代码与星光之间寻找答案 · 收集微光，等待黎明**
 
-  <!-- constellation lines -->
-  <g stroke="#4a6fa5" stroke-width="0.8" opacity="0.35" fill="none">
-    <path d="M90,60 L180,120 L300,50 L420,90 L520,150"/>
-    <path d="M420,90 L640,70"/>
-    <path d="M520,150 L760,180 L740,260"/>
-    <path d="M110,240 L180,120"/>
-  </g>
+[![CSDN](https://img.shields.io/badge/CSDN-weixin__56622231-FC5531?style=flat-square&logo=c&logoColor=white)](https://blog.csdn.net/weixin_56622231)
+[![GitCode](https://img.shields.io/badge/GitCode-badhope-2080E2?style=flat-square&logo=gitcode&logoColor=white)](https://gitcode.com/badhope)
+[![GitHub](https://img.shields.io/badge/GitHub-MS33834-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/MS33834)
+[![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
-  <!-- horizon -->
-  <path d="M0,290 Q215,270 430,285 Q645,300 860,275 L860,320 L0,320 Z" fill="#0d1535" opacity="0.6"/>
-</svg>
-<!-- HERO-SVG-END -->
+<!-- PROFILE-BADGES-START -->
+<img src="https://img.shields.io/badge/Public%20Repos-17-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-13-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<!-- PROFILE-BADGES-END -->
 
 </div>
 
-<h1 align="center">Morning Star · MS33834</h1>
-
-<p align="center">
-  <em>code like a quiet star before dawn</em><br>
-  <em>在代码与星光之间寻找答案</em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/MS33834">GitHub</a> ·
-  <a href="https://gitcode.com/badhope">GitCode 镜像</a> ·
-  <a href="https://blog.csdn.net/weixin_56622231">CSDN 博客</a>
-</p>
-
 ---
 
-## About Me
+## 关于我 / About Me
 
-| Key | Value |
-|---|---|
-| **Name** | MS33834 / badhope |
-| **Cities** | Shenzhen · Tokyo · Los Angeles |
-| **Blog** | [CSDN · weixin_56622231](https://blog.csdn.net/weixin_56622231) |
-| **Motto** | 积极参与 AI 时代探索，收集微光，等待黎明 |
+你好，我是 **badhope**（GitHub: [@MS33834](https://github.com/MS33834)）。
+
+- **身份**：全栈开发者 / AI 应用探索者 / 开源爱好者
+- **坐标**：Shenzhen · Tokyo · Los Angeles
+- **博客**：[CSDN · weixin_56622231](https://blog.csdn.net/weixin_56622231)
+- **镜像**：[GitCode · badhope](https://gitcode.com/badhope)
+- **座右铭**：积极参与 AI 时代探索，收集微光，等待黎明
 
 > 每一行代码都是一颗小星星，聚在一起就成了自己的光。
 
 ---
 
-## Latest Articles
+## 最新文章 / Latest Articles
 
 <!-- CSDN-POSTS-START -->
 1. [Anthropic 的FABLE5到底有什么魅力？为什么这么强？](https://blog.csdn.net/weixin_56622231/article/details/162109133) · `2026-06-18`
@@ -93,9 +43,11 @@
 5. [Dify 自然体框架深度解析：优势、过时之处与 Git 集成之道](https://blog.csdn.net/weixin_56622231/article/details/162108746) · `2026-06-18`
 <!-- CSDN-POSTS-END -->
 
+[→ 查看更多文章](https://blog.csdn.net/weixin_56622231)
+
 ---
 
-## Daily Quote
+## 每日一言 / Daily Quote
 
 <!-- DAILY-QUOTE-START -->
 > **Let us rather run the risk of wearing out than rusting out.**  
@@ -104,15 +56,15 @@
 <details>
 <summary>🌙 中文</summary>
 
-> 夜雨声烦以极其强硬的姿态，骑士般地护卫在了索克萨身前。  
-> — 《全职高手》
+> 如果有来生，要做一只鸟，飞越永恒，没有迷途的苦恼。  
+> — 《说给自己听》
 
 </details>
 <!-- DAILY-QUOTE-END -->
 
 ---
 
-## Tech Stack
+## 技术栈 / Tech Stack
 
 <!-- TECH-STACK-START -->
 <div align="center">
@@ -124,26 +76,41 @@
 
 ---
 
-## GitHub Stats
+## GitHub 数据 / Stats
 
 <div align="center">
 
 <a href="https://github.com/MS33834">
-  <img height="190" src="https://github-readme-stats.vercel.app/api?username=MS33834&show_icons=true&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e&hide=issues&rank_icon=percentile&custom_title=MS33834's%20Star%20Map" alt="github stats"/>
+  <img height="190" src="https://github-readme-stats.vercel.app/api?username=MS33834&show_icons=true&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e&hide=issues&rank_icon=percentile&custom_title=MS33834's%20Star%20Map" alt="GitHub Stats"/>
 </a>
 <a href="https://github.com/MS33834">
-  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MS33834&layout=compact&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="top languages"/>
+  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MS33834&layout=compact&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="Top Languages"/>
 </a>
 
 <br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MS33834&theme=tokyonight&background=050817&border=25335e&stroke=4a6fa5&ring=ffe9a8&fire=ffd700&currStreakNum=ffffff&sideNums=c9d6f2&currStreakLabel=ffe9a8&sideLabels=8fa4d3&dates=6b7fa3" alt="streak stats"/>
+<img src="https://streak-stats.demolab.com/?user=MS33834&theme=tokyonight&background=050817&border=25335e&stroke=4a6fa5&ring=ffe9a8&fire=ffd700&currStreakNum=ffffff&sideNums=c9d6f2&currStreakLabel=ffe9a8&sideLabels=8fa4d3&dates=6b7fa3" alt="GitHub Streak"/>
 
 </div>
 
 ---
 
-## Top Repositories
+## 精选项目 / Featured Projects
+
+下面是我正在维护或比较满意的一些原创项目。徽章会随仓库状态自动刷新：
+
+| 项目 | 简介 | 实时状态 |
+|---|---|---|
+| **[scholarhub](https://github.com/MS33834/scholarhub)** | 面向学生的论文、书籍、数据集开放平台（React + FastAPI） | [![stars](https://img.shields.io/github/stars/MS33834/scholarhub?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/scholarhub) [![lang](https://img.shields.io/github/languages/top/MS33834/scholarhub?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/scholarhub) [![commit](https://img.shields.io/github/last-commit/MS33834/scholarhub?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/scholarhub/commits/main) |
+| **[autoship-cli](https://github.com/MS33834/autoship-cli)** | 本地优先的智能配送助手 | [![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![commit](https://img.shields.io/github/last-commit/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main) |
+| **[taskflow](https://github.com/MS33834/taskflow)** | 任务管理工作流 | [![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/taskflow) [![commit](https://img.shields.io/github/last-commit/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main) |
+| **[urban-pulse](https://github.com/MS33834/urban-pulse)** | 中国城市经济智能分析平台 | [![stars](https://img.shields.io/github/stars/MS33834/urban-pulse?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/urban-pulse) [![lang](https://img.shields.io/github/languages/top/MS33834/urban-pulse?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/urban-pulse) [![commit](https://img.shields.io/github/last-commit/MS33834/urban-pulse?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/urban-pulse/commits/main) |
+| **[financial-agent](https://github.com/MS33834/financial-agent)** | 金融数据分析与投资研究 AI Agent | [![stars](https://img.shields.io/github/stars/MS33834/financial-agent?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/financial-agent) [![lang](https://img.shields.io/github/languages/top/MS33834/financial-agent?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/financial-agent) [![commit](https://img.shields.io/github/last-commit/MS33834/financial-agent?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/financial-agent/commits/main) |
+| **[AI-SKILL](https://github.com/MS33834/AI-SKILL)** | AI Agent 技能仓库开源索引 | [![stars](https://img.shields.io/github/stars/MS33834/AI-SKILL?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/AI-SKILL) [![lang](https://img.shields.io/github/languages/top/MS33834/AI-SKILL?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/AI-SKILL) [![commit](https://img.shields.io/github/last-commit/MS33834/AI-SKILL?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/AI-SKILL/commits/main) |
+
+### 仓库卡片 / Repo Cards
+
+以下卡片由 `.github/workflows/update-readme.yml` **每日 UTC 05:30 自动根据 star 数排序并更新**，最多展示 6 个原创仓库。
 
 <!-- TOP-REPOS-START -->
 <div align="center">
@@ -151,10 +118,12 @@
   <tr>
     <td><a href="https://github.com/MS33834/EmpValue-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=EmpValue-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="EmpValue-AI"/></a></td>
     <td><a href="https://github.com/MS33834/TutorLoop-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=TutorLoop-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="TutorLoop-AI"/></a></td>
+    <td><a href="https://github.com/MS33834/ProxieHub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=ProxieHub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="ProxieHub"/></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/MS33834/ProxieHub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=ProxieHub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="ProxieHub"/></a></td>
     <td><a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="miru-index"/></a></td>
+    <td><a href="https://github.com/MS33834/compass" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=compass&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="compass"/></a></td>
+    <td><a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="urban-pulse"/></a></td>
   </tr>
 </table>
 </div>
@@ -162,36 +131,17 @@
 
 ---
 
-## Trending Repositories
-
-<!-- TRENDING-REPOS-START -->
-| Repository | Description | Stars |
-|------------|-------------|-------|
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technolo... | ⭐ 517,718 |
-| [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 😎 Awesome lists about all kinds of interesting topics | ⭐ 477,392 |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | freeCodeCamp.org's open-source codebase and curriculum.... | ⭐ 449,953 |
-| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | ⭐ 443,128 |
-<!-- TRENDING-REPOS-END -->
-
----
-
-## Activity
+## 贡献与活动 / Activity
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MS33834&theme=tokyo-night&bg_color=050817&color=c9d6f2&line=ffe9a8&point=4a6fa5&area=true&hide_border=true" alt="activity graph" width="100%" style="max-width: 860px;"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=MS33834&theme=tokyo-night&bg_color=050817&color=c9d6f2&line=ffe9a8&point=4a6fa5&area=true&hide_border=true" alt="Activity Graph" width="100%" style="max-width: 860px;"/>
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=MS33834&theme=tokyonight&no-frame=true&margin-w=10&margin-h=10&column=7" alt="trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=MS33834&theme=tokyonight&no-frame=true&margin-w=10&margin-h=10&column=7" alt="GitHub Trophy"/>
 
-</div>
-
----
-
-## Constellation Snake
-
-<div align="center">
+<br><br>
 
 <img src="https://raw.githubusercontent.com/MS33834/MS33834/output/github-snake-dark.svg#gh-dark-mode-only" alt="snake dark" width="100%" style="max-width: 860px;"/>
 <img src="https://raw.githubusercontent.com/MS33834/MS33834/output/github-snake.svg#gh-light-mode-only" alt="snake light" width="100%" style="max-width: 860px;"/>
@@ -200,13 +150,29 @@
 
 ---
 
-<div align="center">
+## 自动化 / Automations
 
-<p>
-  <a href="https://blog.csdn.net/weixin_56622231">CSDN</a> ·
-  <a href="https://github.com/MS33834">GitHub</a> ·
-  <a href="https://gitcode.com/badhope">GitCode</a>
-</p>
+这个 profile 仓库由以下 GitHub Actions 自动维护：
+
+| 工作流 | 触发方式 | 作用 |
+|---|---|---|
+| [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | 每天 UTC 16:00 + 手动触发 | 自动同步 CSDN 最新文章、每日名言、技术栈图标、仓库卡片排序、动态统计徽章 |
+| [`.github/workflows/snake.yml`](.github/workflows/snake.yml) | 每天 UTC 16:00 + 手动触发 | 生成并更新贡献贪吃蛇 SVG |
+| [`.github/workflows/mirror-to-gitcode.yml`](.github/workflows/mirror-to-gitcode.yml) | 每次 push 到 `main` | 自动把 `main` 分支同步到 [GitCode 镜像](https://gitcode.com/badhope/MS33834) |
+
+<!-- LAST-UPDATED-START -->
+_最后更新 / Last updated: 2026-06-20 22:49 UTC_
+<!-- LAST-UPDATED-END -->
+
+---
+
+## 联系我 / Connect
+
+- CSDN：[weixin_56622231](https://blog.csdn.net/weixin_56622231)
+- GitHub：[MS33834](https://github.com/MS33834)
+- GitCode：[badhope](https://gitcode.com/badhope)
+
+<div align="center">
 
 <sub>Keep shining, even when no one is watching.</sub>
 
