@@ -1,4 +1,4 @@
-name: Sync all repos from GitCode
+name: Sync all repos to GitCode mirror
 
 on:
   schedule:
@@ -23,9 +23,9 @@ jobs:
           - taskflow
           - urban-pulse
     steps:
-      - name: Mirror from GitCode to GitHub
+      - name: Mirror from GitHub to GitCode
         run: |
-          git clone --mirror https://badhope:${{ secrets.GITCODE_TOKEN }}@gitcode.com/badhope/${{ matrix.repo }}.git repo-mirror
+          git clone --mirror https://MS33834:${{ secrets.GH_PAT }}@github.com/MS33834/${{ matrix.repo }}.git repo-mirror
           cd repo-mirror
-          git remote add github https://MS33834:${{ secrets.GH_PAT }}@github.com/MS33834/${{ matrix.repo }}.git
-          git push github --mirror
+          git remote add gitcode https://badhope:${{ secrets.GITCODE_TOKEN }}@gitcode.com/badhope/${{ matrix.repo }}.git
+          git push gitcode --mirror
