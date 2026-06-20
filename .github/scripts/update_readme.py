@@ -28,7 +28,6 @@ def fetch(url, headers=None):
 def parse_xml_items(xml_text):
     """Parse CSDN RSS XML without external dependencies."""
     items = []
-    # Split by <item> to avoid full namespace handling
     raw_items = xml_text.split("<item>")[1:]
     for raw in raw_items:
         if "</item>" not in raw:
@@ -62,10 +61,10 @@ def get_csdn_posts(limit=5):
 
 
 def format_csdn_posts(posts):
-    """Format CSDN posts to markdown."""
+    """Format CSDN posts to a clean markdown list."""
     if not posts:
         return "_Unable to fetch the latest articles right now. Please check back later._"
-    lines = ["<div align=\"center\">\n", "<table>"]
+    lines = []
     for idx, p in enumerate(posts, 1):
         date_str = ""
         if p["date"]:
@@ -74,12 +73,7 @@ def format_csdn_posts(posts):
                 date_str = dt.strftime("%Y-%m-%d")
             except Exception:
                 date_str = p["date"][:16]
-        lines.append(
-            f"  <tr><td style='color:#4a6fa5; font-size:20px; width:36px;'>✦</td>"
-            f"<td><a href='{p['link']}' target='_blank' style='font-size:21px; color:#c9d6f2; text-decoration:none;'>"
-            f"{p['title']}</a><br><sub style='color:#6b7fa3; font-size:17px;'>{date_str}</sub></td></tr>"
-        )
-    lines.extend(["</table>", "</div>"])
+        lines.append(f"{idx}. [{p['title']}]({p['link']}) · `{date_str}`")
     return "\n".join(lines)
 
 
@@ -116,15 +110,13 @@ def format_quote(en_text, en_author, zh_text, zh_source):
     """Format daily quote section with collapsible Chinese translation."""
     source_display = f"《{zh_source}》" if zh_source else ""
     return (
-        '<div align="center">\n\n'
-        f'<p style="font-size: 28px; color: #ffe9a8; font-style: italic; margin: 24px 0; line-height: 1.65;">"{en_text}"</p>\n'
-        f'<p style="font-size: 21px; color: #8fa4d3;">— {en_author}</p>\n\n'
-        '<details>\n'
-        '<summary style="font-size: 21px; color: #c9d6f2; cursor: pointer; padding: 12px;">🌙 中文</summary>\n\n'
-        f'<p style="font-size: 26px; color: #fff8dc; margin: 18px 0; line-height: 1.65;">{zh_text}</p>\n'
-        f'<p style="font-size: 19px; color: #8fa4d3;">— {source_display}</p>\n\n'
-        '</details>\n\n'
-        '</div>'
+        f"> **{en_text}**  \n"
+        f"> — {en_author}\n\n"
+        f"<details>\n"
+        f"<summary>🌙 中文</summary>\n\n"
+        f"> {zh_text}  \n"
+        f"> — {source_display}\n\n"
+        f"</details>"
     )
 
 
@@ -142,7 +134,6 @@ def get_tech_stack():
             if lang:
                 lang_counts[lang] = lang_counts.get(lang, 0) + 1
         sorted_langs = sorted(lang_counts.items(), key=lambda x: x[1], reverse=True)[:8]
-        # Use skillicons.dev for a less generic / more crafted look
         icon_map = {
             "Python": "py", "JavaScript": "js", "TypeScript": "ts",
             "Rust": "rust", "Go": "go", "Java": "java", "C++": "cpp",
@@ -168,13 +159,11 @@ def get_tech_stack():
 
 def get_top_repos(limit=4):
     """Fetch user's most starred repos, excluding the profile repo itself."""
-    # Fetch more than needed to compensate for excluded repos
     fetch_count = max(limit * 2, 10)
     url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={fetch_count}"
     try:
         text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
         repos = json.loads(text)
-        # Exclude the profile repo (same name as username) and forks
         filtered = [r for r in repos if r["name"].lower() != GITHUB_USER.lower() and not r.get("fork")]
         filtered = filtered[:limit]
         if not filtered:
@@ -190,7 +179,6 @@ def get_top_repos(limit=4):
                 f'&icon_color=4a6fa5&border_color=25335e" alt="{name}"/>'
                 '</a>'
             )
-        # Build a 2x2 grid for comfortable layout
         grid = [
             "<div align=\"center\">",
             "<table>",
@@ -251,7 +239,6 @@ def main():
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Update CSDN posts
     posts = get_csdn_posts()
     content = update_section(
         content,
@@ -260,7 +247,6 @@ def main():
         format_csdn_posts(posts),
     )
 
-    # Update daily quote
     en_text, en_author = get_english_quote()
     zh_text, zh_source = get_chinese_quote()
     content = update_section(
@@ -270,7 +256,6 @@ def main():
         format_quote(en_text, en_author, zh_text, zh_source),
     )
 
-    # Update tech stack
     tech = get_tech_stack()
     content = update_section(
         content,
@@ -279,7 +264,6 @@ def main():
         tech,
     )
 
-    # Update top repos
     top = get_top_repos()
     content = update_section(
         content,
@@ -288,7 +272,6 @@ def main():
         top,
     )
 
-    # Update trending repos
     trending = get_trending_repos()
     content = update_section(
         content,
