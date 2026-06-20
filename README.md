@@ -86,7 +86,11 @@
 ## Latest Articles
 
 <!-- CSDN-POSTS-START -->
-_Updating..._
+1. [Anthropic 的FABLE5到底有什么魅力？为什么这么强？](https://blog.csdn.net/weixin_56622231/article/details/162109133) · `2026-06-18`
+2. [华为的鸿蒙到底有多牛？为什么称作遥遥领先？](https://blog.csdn.net/weixin_56622231/article/details/162108919) · `2026-06-18`
+3. [Codex vs Cursor：2025 AI编程工具深度横评万字长文](https://blog.csdn.net/weixin_56622231/article/details/162108996) · `2026-06-18`
+4. [华为AI沉默之谜：表面低调，实则下着一盘改变格局的超级大棋](https://blog.csdn.net/weixin_56622231/article/details/162109037) · `2026-06-18`
+5. [Dify 自然体框架深度解析：优势、过时之处与 Git 集成之道](https://blog.csdn.net/weixin_56622231/article/details/162108746) · `2026-06-18`
 <!-- CSDN-POSTS-END -->
 
 ---
@@ -94,7 +98,16 @@ _Updating..._
 ## Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-_Updating..._
+> **Let us rather run the risk of wearing out than rusting out.**  
+> — Theodore Roosevelt
+
+<details>
+<summary>🌙 中文</summary>
+
+> 金风玉露一相逢，便胜却、人间无数。  
+> — 《鹊桥仙·纤云弄巧》
+
+</details>
 <!-- DAILY-QUOTE-END -->
 
 ---
@@ -102,7 +115,11 @@ _Updating..._
 ## Tech Stack
 
 <!-- TECH-STACK-START -->
-_Updating..._
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=ts,py,vue,js&theme=dark&perline=8" alt="tech stack" style="max-width: 720px;"/>
+
+</div>
 <!-- TECH-STACK-END -->
 
 ---
@@ -129,7 +146,18 @@ _Updating..._
 ## Top Repositories
 
 <!-- TOP-REPOS-START -->
-_Updating..._
+<div align="center">
+<table>
+  <tr>
+    <td><a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="miru-index"/></a></td>
+    <td><a href="https://github.com/MS33834/compass" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=compass&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="compass"/></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="urban-pulse"/></a></td>
+    <td><a href="https://github.com/MS33834/AI-SKILL" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=AI-SKILL&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="AI-SKILL"/></a></td>
+  </tr>
+</table>
+</div>
 <!-- TOP-REPOS-END -->
 
 ---
@@ -137,7 +165,12 @@ _Updating..._
 ## Trending Repositories
 
 <!-- TRENDING-REPOS-START -->
-_Updating..._
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | Master programming by recreating your favorite technolo... | ⭐ 517,505 |
+| [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 😎 Awesome lists about all kinds of interesting topics | ⭐ 477,219 |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | freeCodeCamp.org's open-source codebase and curriculum.... | ⭐ 449,861 |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A collective list of free APIs | ⭐ 442,991 |
 <!-- TRENDING-REPOS-END -->
 
 ---
