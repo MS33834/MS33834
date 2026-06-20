@@ -3,7 +3,7 @@ import os
 import re
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 
 README_PATH = "README.md"
 GITHUB_USER = "MS33834"
@@ -157,7 +157,7 @@ def get_tech_stack():
         return "_Unable to fetch the tech stack right now._"
 
 
-def get_top_repos(limit=4):
+def get_top_repos(limit=6):
     """Fetch user's most starred repos, excluding the profile repo itself."""
     fetch_count = max(limit * 2, 10)
     url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={fetch_count}"
@@ -179,21 +179,17 @@ def get_top_repos(limit=4):
                 f'&icon_color=4a6fa5&border_color=25335e" alt="{name}"/>'
                 '</a>'
             )
-        grid = [
-            "<div align=\"center\">",
-            "<table>",
-            "  <tr>",
-            f"    <td>{cards[0]}</td>",
-            f"    <td>{cards[1] if len(cards) > 1 else ''}</td>",
-            "  </tr>",
-            "  <tr>",
-            f"    <td>{cards[2] if len(cards) > 2 else ''}</td>",
-            f"    <td>{cards[3] if len(cards) > 3 else ''}</td>",
-            "  </tr>",
-            "</table>",
-            "</div>",
-        ]
-        return "\n".join(grid)
+        rows = ["<div align=\"center\">", "<table>"]
+        for i in range(0, len(cards), 3):
+            row_cards = cards[i:i + 3]
+            rows.append("  <tr>")
+            for card in row_cards:
+                rows.append(f"    <td>{card}</td>")
+            for _ in range(3 - len(row_cards)):
+                rows.append("    <td></td>")
+            rows.append("  </tr>")
+        rows.extend(["</table>", "</div>"])
+        return "\n".join(rows)
     except Exception as e:
         print(f"Top repos fetch failed: {e}")
         return "_Unable to fetch repository data right now._"
@@ -221,6 +217,48 @@ def get_trending_repos(limit=4):
     except Exception as e:
         print(f"Trending fetch failed: {e}")
         return "_Unable to fetch trending repositories right now._"
+
+
+def get_user_stats():
+    """Fetch public repo count and followers for the user."""
+    url = f"https://api.github.com/users/{GITHUB_USER}"
+    try:
+        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+        data = json.loads(text)
+        return data.get("public_repos", 0), data.get("followers", 0)
+    except Exception as e:
+        print(f"User stats fetch failed: {e}")
+        return 0, 0
+
+
+def get_total_stars():
+    """Sum stars across all public non-fork repos."""
+    url = f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100"
+    try:
+        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+        repos = json.loads(text)
+        return sum(r.get("stargazers_count", 0) for r in repos if not r.get("fork"))
+    except Exception as e:
+        print(f"Total stars fetch failed: {e}")
+        return 0
+
+
+def format_profile_badges(public_repos, total_stars, followers):
+    """Generate dynamic profile summary badges using shields.io."""
+    return (
+        f'<img src="https://img.shields.io/badge/Public%20Repos-{public_repos}-4a6fa5'
+        '?style=flat-square&labelColor=050817" alt="public repos"/> '
+        f'<img src="https://img.shields.io/badge/Total%20Stars-{total_stars}-ffe9a8'
+        '?style=flat-square&labelColor=050817" alt="total stars"/> '
+        f'<img src="https://img.shields.io/badge/Followers-{followers}-c9d6f2'
+        '?style=flat-square&labelColor=050817" alt="followers"/>'
+    )
+
+
+def format_last_updated():
+    """Generate a last-updated timestamp line."""
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    return f"_最后更新 / Last updated: {now}_"
 
 
 def update_section(content, marker_start, marker_end, new_content):
@@ -270,6 +308,22 @@ def main():
         "<!-- TOP-REPOS-START -->",
         "<!-- TOP-REPOS-END -->",
         top,
+    )
+
+    public_repos, followers = get_user_stats()
+    total_stars = get_total_stars()
+    content = update_section(
+        content,
+        "<!-- PROFILE-BADGES-START -->",
+        "<!-- PROFILE-BADGES-END -->",
+        format_profile_badges(public_repos, total_stars, followers),
+    )
+
+    content = update_section(
+        content,
+        "<!-- LAST-UPDATED-START -->",
+        "<!-- LAST-UPDATED-END -->",
+        format_last_updated(),
     )
 
     trending = get_trending_repos()

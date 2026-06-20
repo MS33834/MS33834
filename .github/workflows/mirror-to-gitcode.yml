@@ -1,0 +1,23 @@
+name: Mirror to GitCode
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to GitCode
+        env:
+          GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
+        run: |
+          git remote add gitcode https://badhope:${GITCODE_TOKEN}@gitcode.com/badhope/MS33834.git
+          git push --force --set-upstream gitcode main
