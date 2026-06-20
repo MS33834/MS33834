@@ -1,0 +1,31 @@
+name: Sync all repos to GitCode mirror
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # 每小时同步一次
+  workflow_dispatch:       # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo:
+          - AI-SKILL
+          - autoship-cli
+          - DU
+          - MS33834
+          - compass
+          - financial-agent
+          - miru-index
+          - scholarhub
+          - taskflow
+          - urban-pulse
+    steps:
+      - name: Mirror from GitHub to GitCode
+        run: |
+          git clone --mirror https://MS33834:${{ secrets.GH_PAT }}@github.com/MS33834/${{ matrix.repo }}.git repo-mirror
+          cd repo-mirror
+          git remote add gitcode https://badhope:${{ secrets.GITCODE_TOKEN }}@gitcode.com/badhope/${{ matrix.repo }}.git
+          git push gitcode --mirror
