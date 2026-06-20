@@ -5,7 +5,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-README_PATH = "README.md"
+README_FILES = [("README.md", "zh"), ("README.en.md", "en")]
 GITHUB_USER = "MS33834"
 CSDN_USER = "weixin_56622231"
 
@@ -106,8 +106,10 @@ def get_chinese_quote():
         return "在黎明之前，保持发光。", "启明星"
 
 
-def format_quote(en_text, en_author, zh_text, zh_source):
-    """Format daily quote section with collapsible Chinese translation."""
+def format_quote(en_text, en_author, zh_text, zh_source, lang="zh"):
+    """Format daily quote section."""
+    if lang == "en":
+        return f"> **{en_text}**  \n> — {en_author}"
     source_display = f"《{zh_source}》" if zh_source else ""
     return (
         f"> **{en_text}**  \n"
@@ -255,10 +257,11 @@ def format_profile_badges(public_repos, total_stars, followers):
     )
 
 
-def format_last_updated():
+def format_last_updated(lang="zh"):
     """Generate a last-updated timestamp line."""
+    label = "最后更新 / Last updated" if lang == "zh" else "Last updated"
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    return f"_最后更新 / Last updated: {now}_"
+    return f"_{label}: {now}_"
 
 
 def update_section(content, marker_start, marker_end, new_content):
@@ -274,70 +277,76 @@ def update_section(content, marker_start, marker_end, new_content):
 
 
 def main():
-    with open(README_PATH, "r", encoding="utf-8") as f:
-        content = f.read()
-
     posts = get_csdn_posts()
-    content = update_section(
-        content,
-        "<!-- CSDN-POSTS-START -->",
-        "<!-- CSDN-POSTS-END -->",
-        format_csdn_posts(posts),
-    )
-
     en_text, en_author = get_english_quote()
     zh_text, zh_source = get_chinese_quote()
-    content = update_section(
-        content,
-        "<!-- DAILY-QUOTE-START -->",
-        "<!-- DAILY-QUOTE-END -->",
-        format_quote(en_text, en_author, zh_text, zh_source),
-    )
-
     tech = get_tech_stack()
-    content = update_section(
-        content,
-        "<!-- TECH-STACK-START -->",
-        "<!-- TECH-STACK-END -->",
-        tech,
-    )
-
     top = get_top_repos()
-    content = update_section(
-        content,
-        "<!-- TOP-REPOS-START -->",
-        "<!-- TOP-REPOS-END -->",
-        top,
-    )
-
     public_repos, followers = get_user_stats()
     total_stars = get_total_stars()
-    content = update_section(
-        content,
-        "<!-- PROFILE-BADGES-START -->",
-        "<!-- PROFILE-BADGES-END -->",
-        format_profile_badges(public_repos, total_stars, followers),
-    )
 
-    content = update_section(
-        content,
-        "<!-- LAST-UPDATED-START -->",
-        "<!-- LAST-UPDATED-END -->",
-        format_last_updated(),
-    )
+    for filename, lang in README_FILES:
+        try:
+            with open(filename, "r", encoding="utf-8") as f:
+                content = f.read()
+        except FileNotFoundError:
+            print(f"{filename} not found, skipping.")
+            continue
 
-    trending = get_trending_repos()
-    content = update_section(
-        content,
-        "<!-- TRENDING-REPOS-START -->",
-        "<!-- TRENDING-REPOS-END -->",
-        trending,
-    )
+        content = update_section(
+            content,
+            "<!-- CSDN-POSTS-START -->",
+            "<!-- CSDN-POSTS-END -->",
+            format_csdn_posts(posts),
+        )
 
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(content)
+        content = update_section(
+            content,
+            "<!-- DAILY-QUOTE-START -->",
+            "<!-- DAILY-QUOTE-END -->",
+            format_quote(en_text, en_author, zh_text, zh_source, lang),
+        )
 
-    print("README.md updated successfully.")
+        content = update_section(
+            content,
+            "<!-- TECH-STACK-START -->",
+            "<!-- TECH-STACK-END -->",
+            tech,
+        )
+
+        content = update_section(
+            content,
+            "<!-- TOP-REPOS-START -->",
+            "<!-- TOP-REPOS-END -->",
+            top,
+        )
+
+        content = update_section(
+            content,
+            "<!-- PROFILE-BADGES-START -->",
+            "<!-- PROFILE-BADGES-END -->",
+            format_profile_badges(public_repos, total_stars, followers),
+        )
+
+        content = update_section(
+            content,
+            "<!-- LAST-UPDATED-START -->",
+            "<!-- LAST-UPDATED-END -->",
+            format_last_updated(lang),
+        )
+
+        trending = get_trending_repos()
+        content = update_section(
+            content,
+            "<!-- TRENDING-REPOS-START -->",
+            "<!-- TRENDING-REPOS-END -->",
+            trending,
+        )
+
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(content)
+
+    print("README files updated successfully.")
 
 
 if __name__ == "__main__":
