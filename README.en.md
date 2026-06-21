@@ -108,7 +108,7 @@ Here are some original projects I'm maintaining or particularly proud of. Badges
 
 ### Repo Cards
 
-The cards below are **auto-sorted by stars and updated daily at 05:30 UTC** by `.github/workflows/update-readme.yml`, showing up to 6 original repos.
+The cards below are **auto-sorted by stars and updated daily at 16:00 UTC (00:00 CST)** by `.github/workflows/update-readme.yml`, showing up to 6 original repos.
 
 <!-- TOP-REPOS-START -->
 <div align="center">

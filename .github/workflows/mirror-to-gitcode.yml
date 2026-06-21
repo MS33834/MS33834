@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # 每天北京时间 00:30 运行（UTC 16:30），在 update-readme 之后自动补同步
+    - cron: '30 16 * * *'
   workflow_dispatch:
 
 jobs:

@@ -114,7 +114,7 @@
 
 ### 仓库卡片 / Repo Cards
 
-以下卡片由 `.github/workflows/update-readme.yml` **每日 UTC 05:30 自动根据 star 数排序并更新**，最多展示 6 个原创仓库。
+以下卡片由 `.github/workflows/update-readme.yml` **每日 UTC 16:00（北京时间 00:00）自动根据 star 数排序并更新**，最多展示 6 个原创仓库。
 
 <!-- TOP-REPOS-START -->
 <div align="center">
