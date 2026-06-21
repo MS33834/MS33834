@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-17-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-13-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-17-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-16-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -56,8 +56,8 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 ## Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **Let us rather run the risk of wearing out than rusting out.**  
-> — Theodore Roosevelt
+> **Only when you can be extremely pliable and soft can you be extremely hard and strong.**  
+> — Zen Proverb
 <!-- DAILY-QUOTE-END -->
 
 ---
@@ -156,10 +156,10 @@ This profile repository is maintained by the following GitHub Actions:
 |---|---|---|
 | [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | Daily at 16:00 UTC + manual | Sync latest CSDN articles, daily quote, tech stack icons, repo card order, dynamic stat badges |
 | [`.github/workflows/snake.yml`](.github/workflows/snake.yml) | Daily at 16:00 UTC + manual | Generate and update the contribution snake SVG |
-| [`.github/workflows/mirror-to-gitcode.yml`](.github/workflows/mirror-to-gitcode.yml) | On every push to `main` | Mirror the `main` branch to [GitCode](https://gitcode.com/badhope/MS33834) |
+| [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-20 23:12 UTC_
+_Last updated: 2026-06-21 01:52 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---

@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-17-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-13-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-17-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-16-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -54,14 +54,14 @@
 ## 每日一言 / Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **Let us rather run the risk of wearing out than rusting out.**  
-> — Theodore Roosevelt
+> **Only when you can be extremely pliable and soft can you be extremely hard and strong.**  
+> — Zen Proverb
 
 <details>
 <summary>🌙 中文</summary>
 
-> 时光只解催人老，不信多情，长恨离亭，泪滴春衫酒易醒。  
-> — 《采桑子·时光只解催人老》
+> 崖壁有别三瀑布，洞山无界两观音。  
+> — 《忆江南·百丈漈观音洞》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -162,10 +162,10 @@
 |---|---|---|
 | [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | 每天 UTC 16:00 + 手动触发 | 自动同步 CSDN 最新文章、每日名言、技术栈图标、仓库卡片排序、动态统计徽章 |
 | [`.github/workflows/snake.yml`](.github/workflows/snake.yml) | 每天 UTC 16:00 + 手动触发 | 生成并更新贡献贪吃蛇 SVG |
-| [`.github/workflows/mirror-to-gitcode.yml`](.github/workflows/mirror-to-gitcode.yml) | 每次 push 到 `main` | 自动把 `main` 分支同步到 [GitCode 镜像](https://gitcode.com/badhope/MS33834) |
+| [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | 每 12 小时 + 手动触发 | 自动把所有列出的仓库镜像同步到 [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-20 23:12 UTC_
+_最后更新 / Last updated: 2026-06-21 01:52 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
