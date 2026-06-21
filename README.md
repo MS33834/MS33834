@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-17-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-16-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-16-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -60,8 +60,8 @@
 <details>
 <summary>🌙 中文</summary>
 
-> 崖壁有别三瀑布，洞山无界两观音。  
-> — 《忆江南·百丈漈观音洞》
+> 但愿人长久，千里共婵娟。  
+> — 《水调歌头·丙辰中秋》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -85,15 +85,18 @@
 <div align="center">
 
 <a href="https://github.com/MS33834">
-  <img height="190" src="https://github-readme-stats.vercel.app/api?username=MS33834&show_icons=true&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e&hide=issues&rank_icon=percentile&custom_title=MS33834's%20Star%20Map" alt="GitHub Stats"/>
-</a>
-<a href="https://github.com/MS33834">
-  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MS33834&layout=compact&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="Top Languages"/>
+  <img width="400" src="https://github-readme-stats.vercel.app/api?username=MS33834&show_icons=true&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e&hide=issues&rank_icon=percentile&custom_title=MS33834's%20Star%20Map" alt="GitHub Stats"/>
 </a>
 
 <br>
 
-<img src="https://streak-stats.demolab.com/?user=MS33834&theme=tokyonight&background=050817&border=25335e&stroke=4a6fa5&ring=ffe9a8&fire=ffd700&currStreakNum=ffffff&sideNums=c9d6f2&currStreakLabel=ffe9a8&sideLabels=8fa4d3&dates=6b7fa3" alt="GitHub Streak"/>
+<a href="https://github.com/MS33834">
+  <img width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MS33834&layout=compact&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="Top Languages"/>
+</a>
+
+<br>
+
+<img width="400" src="https://streak-stats.demolab.com/?user=MS33834&theme=tokyonight&background=050817&border=25335e&stroke=4a6fa5&ring=ffe9a8&fire=ffd700&currStreakNum=ffffff&sideNums=c9d6f2&currStreakLabel=ffe9a8&sideLabels=8fa4d3&dates=6b7fa3" alt="GitHub Streak"/>
 
 </div>
 
@@ -101,16 +104,43 @@
 
 ## 精选项目 / Featured Projects
 
-下面是我正在维护或比较满意的一些原创项目。徽章会随仓库状态自动刷新：
+下面是我正在维护或比较满意的一些原创项目。徽章会随仓库状态自动刷新。
 
-| 项目 | 简介 | 实时状态 |
-|---|---|---|
-| **[scholarhub](https://github.com/MS33834/scholarhub)** | 面向学生的论文、书籍、数据集开放平台（React + FastAPI） | [![stars](https://img.shields.io/github/stars/MS33834/scholarhub?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/scholarhub) [![lang](https://img.shields.io/github/languages/top/MS33834/scholarhub?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/scholarhub) [![commit](https://img.shields.io/github/last-commit/MS33834/scholarhub?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/scholarhub/commits/main) |
-| **[autoship-cli](https://github.com/MS33834/autoship-cli)** | 本地优先的智能配送助手 | [![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![commit](https://img.shields.io/github/last-commit/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main) |
-| **[taskflow](https://github.com/MS33834/taskflow)** | 任务管理工作流 | [![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/taskflow) [![commit](https://img.shields.io/github/last-commit/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main) |
-| **[urban-pulse](https://github.com/MS33834/urban-pulse)** | 中国城市经济智能分析平台 | [![stars](https://img.shields.io/github/stars/MS33834/urban-pulse?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/urban-pulse) [![lang](https://img.shields.io/github/languages/top/MS33834/urban-pulse?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/urban-pulse) [![commit](https://img.shields.io/github/last-commit/MS33834/urban-pulse?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/urban-pulse/commits/main) |
-| **[financial-agent](https://github.com/MS33834/financial-agent)** | 金融数据分析与投资研究 AI Agent | [![stars](https://img.shields.io/github/stars/MS33834/financial-agent?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/financial-agent) [![lang](https://img.shields.io/github/languages/top/MS33834/financial-agent?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/financial-agent) [![commit](https://img.shields.io/github/last-commit/MS33834/financial-agent?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/financial-agent/commits/main) |
-| **[AI-SKILL](https://github.com/MS33834/AI-SKILL)** | AI Agent 技能仓库开源索引 | [![stars](https://img.shields.io/github/stars/MS33834/AI-SKILL?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/AI-SKILL) [![lang](https://img.shields.io/github/languages/top/MS33834/AI-SKILL?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/AI-SKILL) [![commit](https://img.shields.io/github/last-commit/MS33834/AI-SKILL?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/AI-SKILL/commits/main) |
+### [scholarhub](https://github.com/MS33834/scholarhub)
+
+面向学生的论文、书籍、数据集开放平台（React + FastAPI）
+
+[![stars](https://img.shields.io/github/stars/MS33834/scholarhub?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/scholarhub) [![lang](https://img.shields.io/github/languages/top/MS33834/scholarhub?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/scholarhub) [![commit](https://img.shields.io/github/last-commit/MS33834/scholarhub?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/scholarhub/commits/main)
+
+### [autoship-cli](https://github.com/MS33834/autoship-cli)
+
+本地优先的智能配送助手
+
+[![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![commit](https://img.shields.io/github/last-commit/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main)
+
+### [taskflow](https://github.com/MS33834/taskflow)
+
+任务管理工作流
+
+[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/taskflow) [![commit](https://img.shields.io/github/last-commit/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
+
+### [urban-pulse](https://github.com/MS33834/urban-pulse)
+
+中国城市经济智能分析平台
+
+[![stars](https://img.shields.io/github/stars/MS33834/urban-pulse?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/urban-pulse) [![lang](https://img.shields.io/github/languages/top/MS33834/urban-pulse?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/urban-pulse) [![commit](https://img.shields.io/github/last-commit/MS33834/urban-pulse?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/urban-pulse/commits/main)
+
+### [financial-agent](https://github.com/MS33834/financial-agent)
+
+金融数据分析与投资研究 AI Agent
+
+[![stars](https://img.shields.io/github/stars/MS33834/financial-agent?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/financial-agent) [![lang](https://img.shields.io/github/languages/top/MS33834/financial-agent?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/financial-agent) [![commit](https://img.shields.io/github/last-commit/MS33834/financial-agent?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/financial-agent/commits/main)
+
+### [AI-SKILL](https://github.com/MS33834/AI-SKILL)
+
+AI Agent 技能仓库开源索引
+
+[![stars](https://img.shields.io/github/stars/MS33834/AI-SKILL?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/AI-SKILL) [![lang](https://img.shields.io/github/languages/top/MS33834/AI-SKILL?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/AI-SKILL) [![commit](https://img.shields.io/github/last-commit/MS33834/AI-SKILL?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/AI-SKILL/commits/main)
 
 ### 仓库卡片 / Repo Cards
 
@@ -118,18 +148,12 @@
 
 <!-- TOP-REPOS-START -->
 <div align="center">
-<table>
-  <tr>
-    <td><a href="https://github.com/MS33834/EmpValue-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=EmpValue-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="EmpValue-AI"/></a></td>
-    <td><a href="https://github.com/MS33834/TutorLoop-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=TutorLoop-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="TutorLoop-AI"/></a></td>
-    <td><a href="https://github.com/MS33834/ProxieHub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=ProxieHub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="ProxieHub"/></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="miru-index"/></a></td>
-    <td><a href="https://github.com/MS33834/compass" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=compass&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="compass"/></a></td>
-    <td><a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" alt="urban-pulse"/></a></td>
-  </tr>
-</table>
+<a href="https://github.com/MS33834/EmpValue-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=EmpValue-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="EmpValue-AI"/></a><br>
+<a href="https://github.com/MS33834/TutorLoop-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=TutorLoop-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="TutorLoop-AI"/></a><br>
+<a href="https://github.com/MS33834/ProxieHub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=ProxieHub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="ProxieHub"/></a><br>
+<a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="miru-index"/></a><br>
+<a href="https://github.com/MS33834/compass" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=compass&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="compass"/></a><br>
+<a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="urban-pulse"/></a><br>
 </div>
 <!-- TOP-REPOS-END -->
 
@@ -165,7 +189,7 @@
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | 每 12 小时 + 手动触发 | 自动把所有列出的仓库镜像同步到 [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-21 01:52 UTC_
+_最后更新 / Last updated: 2026-06-21 03:46 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---

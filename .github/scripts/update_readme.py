@@ -1,6 +1,8 @@
 import json
 import os
 import re
+import ssl
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -14,15 +16,34 @@ DEFAULT_HEADERS = {
 }
 
 
-def fetch(url, headers=None):
-    """Fetch URL and return decoded text."""
+def fetch(url, headers=None, retries=3):
+    """Fetch URL and return decoded text, with retry for transient errors."""
     merged = {**DEFAULT_HEADERS, **(headers or {})}
     token = os.environ.get("GITHUB_TOKEN")
     if token and "github.com" in url:
         merged["Authorization"] = f"Bearer {token}"
-    req = urllib.request.Request(url, headers=merged)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8")
+
+    last_err = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=merged)
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return resp.read().decode("utf-8")
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code >= 500 and attempt < retries - 1:
+                print(f"Fetch {url} got HTTP {e.code}, retrying ({attempt + 1}/{retries})...")
+                time.sleep(2 ** attempt)
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError, ssl.SSLError) as e:
+            last_err = e
+            if attempt < retries - 1:
+                print(f"Fetch {url} failed ({type(e).__name__}), retrying ({attempt + 1}/{retries})...")
+                time.sleep(2 ** attempt)
+                continue
+            raise
+    raise last_err
 
 
 def parse_xml_items(xml_text):
@@ -170,55 +191,22 @@ def get_top_repos(limit=6):
         filtered = filtered[:limit]
         if not filtered:
             return "_No public repositories found._"
-        cards = []
+        lines = ['<div align="center">']
         for r in filtered:
             name = r["name"]
             url_repo = r["html_url"]
-            cards.append(
+            lines.append(
                 f'<a href="{url_repo}" target="_blank">'
                 f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={GITHUB_USER}&repo={name}'
                 '&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2'
-                f'&icon_color=4a6fa5&border_color=25335e" alt="{name}"/>'
-                '</a>'
+                f'&icon_color=4a6fa5&border_color=25335e" width="400" alt="{name}"/>'
+                '</a><br>'
             )
-        rows = ["<div align=\"center\">", "<table>"]
-        for i in range(0, len(cards), 3):
-            row_cards = cards[i:i + 3]
-            rows.append("  <tr>")
-            for card in row_cards:
-                rows.append(f"    <td>{card}</td>")
-            for _ in range(3 - len(row_cards)):
-                rows.append("    <td></td>")
-            rows.append("  </tr>")
-        rows.extend(["</table>", "</div>"])
-        return "\n".join(rows)
+        lines.append('</div>')
+        return "\n".join(lines)
     except Exception as e:
         print(f"Top repos fetch failed: {e}")
         return "_Unable to fetch repository data right now._"
-
-
-def get_trending_repos(limit=4):
-    """Fetch popular repos as a proxy for trending."""
-    url = f"https://api.github.com/search/repositories?q=stars:>5000&sort=stars&order=desc&per_page={limit}"
-    try:
-        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
-        data = json.loads(text)
-        items = data.get("items", [])
-        if not items:
-            return "_Unable to fetch trending repositories right now._"
-        rows = []
-        for r in items:
-            name = r["full_name"]
-            desc = r.get("description") or "No description"
-            stars = r["stargazers_count"]
-            url_repo = r["html_url"]
-            short_desc = desc[:55] + "..." if len(desc) > 55 else desc
-            rows.append(f"| [{name}]({url_repo}) | {short_desc} | ⭐ {stars:,} |")
-        header = "| Repository | Description | Stars |\n|------------|-------------|-------|"
-        return header + "\n" + "\n".join(rows)
-    except Exception as e:
-        print(f"Trending fetch failed: {e}")
-        return "_Unable to fetch trending repositories right now._"
 
 
 def get_user_stats():
@@ -333,14 +321,6 @@ def main():
             "<!-- LAST-UPDATED-START -->",
             "<!-- LAST-UPDATED-END -->",
             format_last_updated(lang),
-        )
-
-        trending = get_trending_repos()
-        content = update_section(
-            content,
-            "<!-- TRENDING-REPOS-START -->",
-            "<!-- TRENDING-REPOS-END -->",
-            trending,
         )
 
         with open(filename, "w", encoding="utf-8") as f:
