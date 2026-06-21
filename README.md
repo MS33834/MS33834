@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-16-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-1-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-33-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -40,11 +40,11 @@
 ## 最新文章 / Latest Articles
 
 <!-- CSDN-POSTS-START -->
-1. [Anthropic 的FABLE5到底有什么魅力？为什么这么强？](https://blog.csdn.net/weixin_56622231/article/details/162109133) · `2026-06-18`
-2. [华为的鸿蒙到底有多牛？为什么称作遥遥领先？](https://blog.csdn.net/weixin_56622231/article/details/162108919) · `2026-06-18`
-3. [Codex vs Cursor：2025 AI编程工具深度横评万字长文](https://blog.csdn.net/weixin_56622231/article/details/162108996) · `2026-06-18`
-4. [华为AI沉默之谜：表面低调，实则下着一盘改变格局的超级大棋](https://blog.csdn.net/weixin_56622231/article/details/162109037) · `2026-06-18`
-5. [Dify 自然体框架深度解析：优势、过时之处与 Git 集成之道](https://blog.csdn.net/weixin_56622231/article/details/162108746) · `2026-06-18`
+1. [AI辅助开发工具链2026版：从编码到部署的全栈智能演进](https://blog.csdn.net/weixin_56622231/article/details/162175652) · `2026-06-21`
+2. [AI工具流全景指南：从概念到腾讯云实战](https://blog.csdn.net/weixin_56622231/article/details/162175630) · `2026-06-21`
+3. [Anthropic 的FABLE5到底有什么魅力？为什么这么强？](https://blog.csdn.net/weixin_56622231/article/details/162109133) · `2026-06-18`
+4. [华为的鸿蒙到底有多牛？为什么称作遥遥领先？](https://blog.csdn.net/weixin_56622231/article/details/162108919) · `2026-06-18`
+5. [Codex vs Cursor：2025 AI编程工具深度横评万字长文](https://blog.csdn.net/weixin_56622231/article/details/162108996) · `2026-06-18`
 <!-- CSDN-POSTS-END -->
 
 [→ 查看更多文章](https://blog.csdn.net/weixin_56622231)
@@ -60,8 +60,8 @@
 <details>
 <summary>🌙 中文</summary>
 
-> 但愿人长久，千里共婵娟。  
-> — 《水调歌头·丙辰中秋》
+> 众里寻他千百度。蓦然回首，那人却在，灯火阑珊处。  
+> — 《青玉案·元夕》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -189,7 +189,7 @@ AI Agent 技能仓库开源索引
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | 每 12 小时 + 手动触发 | 自动把所有列出的仓库镜像同步到 [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-21 03:46 UTC_
+_最后更新 / Last updated: 2026-06-21 20:54 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
