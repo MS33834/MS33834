@@ -143,12 +143,31 @@ def format_quote(en_text, en_author, zh_text, zh_source, lang="zh"):
     )
 
 
+def fetch_all_repos():
+    """Fetch all public non-fork repos across pages, excluding the profile repo."""
+    all_repos = []
+    page = 1
+    while True:
+        url = f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&page={page}"
+        try:
+            text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+            repos = json.loads(text)
+            if not repos:
+                break
+            all_repos.extend(repos)
+            if len(repos) < 100:
+                break
+            page += 1
+        except Exception as e:
+            print(f"Repo page {page} fetch failed: {e}")
+            break
+    return [r for r in all_repos if r["name"].lower() != GITHUB_USER.lower() and not r.get("fork")]
+
+
 def get_tech_stack():
     """Detect tech stack from user's public repos."""
-    url = f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100"
     try:
-        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
-        repos = json.loads(text)
+        repos = fetch_all_repos()
         if not repos:
             return "_No public repository data available._"
         lang_counts = {}
@@ -181,14 +200,11 @@ def get_tech_stack():
 
 
 def fetch_starred_repos(limit=6):
-    """Fetch user's most starred non-fork repos, excluding the profile repo itself."""
-    fetch_count = max(limit * 2, 10)
-    url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={fetch_count}"
+    """Fetch user's most starred non-fork repos, sorted by stargazers_count in Python."""
     try:
-        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
-        repos = json.loads(text)
-        filtered = [r for r in repos if r["name"].lower() != GITHUB_USER.lower() and not r.get("fork")]
-        return filtered[:limit]
+        repos = fetch_all_repos()
+        sorted_repos = sorted(repos, key=lambda r: r.get("stargazers_count", 0), reverse=True)
+        return sorted_repos[:limit]
     except Exception as e:
         print(f"Starred repos fetch failed: {e}")
         return []
@@ -222,14 +238,20 @@ def format_featured_repos(repos):
         name = r["name"]
         url_repo = r["html_url"]
         desc = (r.get("description") or "Original project by MS33834.").strip()
+        stars = r.get("stargazers_count", 0)
+        forks = r.get("forks_count", 0)
+        watchers = r.get("watchers_count", 0)
+        updated = r.get("updated_at", "")[:10]
         lines.append(f"### [{name}]({url_repo})")
         lines.append("")
         lines.append(f"{desc}")
         lines.append("")
         lines.append(
-            f"[![stars](https://img.shields.io/github/stars/{GITHUB_USER}/{name}?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)]({url_repo}) "
-            f"[![lang](https://img.shields.io/github/languages/top/{GITHUB_USER}/{name}?style=flat-square&color=4a6fa5&labelColor=050817)]({url_repo}) "
-            f"[![commit](https://img.shields.io/github/last-commit/{GITHUB_USER}/{name}?style=flat-square&color=c9d6f2&labelColor=050817)]({url_repo}/commits/main)"
+            f"[![stars](https://img.shields.io/github/stars/{GITHUB_USER}/{name}?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)]({url_repo}) "
+            f"[![forks](https://img.shields.io/github/forks/{GITHUB_USER}/{name}?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)]({url_repo}) "
+            f"[![watchers](https://img.shields.io/github/watchers/{GITHUB_USER}/{name}?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)]({url_repo}) "
+            f"[![lang](https://img.shields.io/github/languages/top/{GITHUB_USER}/{name}?style=flat-square&color=8fa4d3&labelColor=050817)]({url_repo}) "
+            f"[![updated](https://img.shields.io/badge/updated-{updated}-6b7fa3?style=flat-square&labelColor=050817)]({url_repo}/commits/main)"
         )
         lines.append("")
     return "\n".join(lines)
@@ -249,11 +271,9 @@ def get_user_stats():
 
 def get_total_stars():
     """Sum stars across all public non-fork repos."""
-    url = f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100"
     try:
-        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
-        repos = json.loads(text)
-        return sum(r.get("stargazers_count", 0) for r in repos if not r.get("fork"))
+        repos = fetch_all_repos()
+        return sum(r.get("stargazers_count", 0) for r in repos)
     except Exception as e:
         print(f"Total stars fetch failed: {e}")
         return 0

@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-47-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-49-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -101,41 +101,41 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 The projects below are automatically picked from my public repositories and sorted by **stars**. They refresh every day at 16:00 UTC (00:00 CST) via `.github/workflows/update-readme.yml`.
 
 <!-- FEATURED-PROJECTS-START -->
-### [EmpValue-AI](https://github.com/MS33834/EmpValue-AI)
+### [autoship-cli](https://github.com/MS33834/autoship-cli)
 
-AI-powered toolkit for employee value assessment and talent analytics.
+A CLI toolkit for automating shipping, deployment, and release workflows.
 
-[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![commit](https://img.shields.io/github/last-commit/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/autoship-cli) [![forks](https://img.shields.io/github/forks/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/autoship-cli) [![watchers](https://img.shields.io/github/watchers/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![updated](https://img.shields.io/badge/updated-2026-06-22-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main)
 
-### [TutorLoop-AI](https://github.com/MS33834/TutorLoop-AI)
+### [AI-SKILL](https://github.com/MS33834/AI-SKILL)
 
-AI tutoring system for personalized learning loops and adaptive education.
+A curated collection of AI skills, agents, and prompt engineering experiments.
 
-[![stars](https://img.shields.io/github/stars/MS33834/TutorLoop-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/TutorLoop-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/TutorLoop-AI?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/TutorLoop-AI) [![commit](https://img.shields.io/github/last-commit/MS33834/TutorLoop-AI?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/TutorLoop-AI/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/AI-SKILL?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/AI-SKILL) [![forks](https://img.shields.io/github/forks/MS33834/AI-SKILL?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/AI-SKILL) [![watchers](https://img.shields.io/github/watchers/MS33834/AI-SKILL?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/AI-SKILL) [![lang](https://img.shields.io/github/languages/top/MS33834/AI-SKILL?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/AI-SKILL) [![updated](https://img.shields.io/badge/updated-2026-06-22-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/AI-SKILL/commits/main)
 
-### [ProxieHub](https://github.com/MS33834/ProxieHub)
+### [taskflow](https://github.com/MS33834/taskflow)
 
-Community-curated aggregator of free proxy/VPN tools and public node lists.
+A task and workflow management system with scheduling and automation.
 
-[![stars](https://img.shields.io/github/stars/MS33834/ProxieHub?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/ProxieHub) [![lang](https://img.shields.io/github/languages/top/MS33834/ProxieHub?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/ProxieHub) [![commit](https://img.shields.io/github/last-commit/MS33834/ProxieHub?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/ProxieHub/commits/main)
-
-### [miru-index](https://github.com/MS33834/miru-index)
-
-An index hub and discovery page for miru-related resources and projects.
-
-[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/miru-index) [![commit](https://img.shields.io/github/last-commit/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/taskflow) [![forks](https://img.shields.io/github/forks/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/taskflow) [![watchers](https://img.shields.io/github/watchers/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/taskflow) [![updated](https://img.shields.io/badge/updated-2026-06-22-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
 
 ### [compass](https://github.com/MS33834/compass)
 
 A lightweight decision compass and navigation framework for projects.
 
-[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/compass) [![commit](https://img.shields.io/github/last-commit/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/compass) [![forks](https://img.shields.io/github/forks/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/compass) [![watchers](https://img.shields.io/github/watchers/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/compass) [![updated](https://img.shields.io/badge/updated-2026-06-21-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
 
-### [urban-pulse](https://github.com/MS33834/urban-pulse)
+### [EmpValue-AI](https://github.com/MS33834/EmpValue-AI)
 
-Urban data pulse and visualization experiments for city insights.
+AI-powered toolkit for employee value assessment and talent analytics.
 
-[![stars](https://img.shields.io/github/stars/MS33834/urban-pulse?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/urban-pulse) [![lang](https://img.shields.io/github/languages/top/MS33834/urban-pulse?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/urban-pulse) [![commit](https://img.shields.io/github/last-commit/MS33834/urban-pulse?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/urban-pulse/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-21-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
+
+### [miru-index](https://github.com/MS33834/miru-index)
+
+An index hub and discovery page for miru-related resources and projects.
+
+[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/miru-index) [![forks](https://img.shields.io/github/forks/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/miru-index) [![watchers](https://img.shields.io/github/watchers/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/miru-index) [![updated](https://img.shields.io/badge/updated-2026-06-22-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
 
 <!-- FEATURED-PROJECTS-END -->
 
@@ -145,12 +145,12 @@ The cards below are **auto-sorted by stars and updated daily at 16:00 UTC (00:00
 
 <!-- TOP-REPOS-START -->
 <div align="center">
-<a href="https://github.com/MS33834/EmpValue-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=EmpValue-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="EmpValue-AI"/></a><br>
-<a href="https://github.com/MS33834/TutorLoop-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=TutorLoop-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="TutorLoop-AI"/></a><br>
-<a href="https://github.com/MS33834/ProxieHub" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=ProxieHub&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="ProxieHub"/></a><br>
-<a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="miru-index"/></a><br>
+<a href="https://github.com/MS33834/autoship-cli" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=autoship-cli&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="autoship-cli"/></a><br>
+<a href="https://github.com/MS33834/AI-SKILL" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=AI-SKILL&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="AI-SKILL"/></a><br>
+<a href="https://github.com/MS33834/taskflow" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=taskflow&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="taskflow"/></a><br>
 <a href="https://github.com/MS33834/compass" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=compass&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="compass"/></a><br>
-<a href="https://github.com/MS33834/urban-pulse" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=urban-pulse&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="urban-pulse"/></a><br>
+<a href="https://github.com/MS33834/EmpValue-AI" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=EmpValue-AI&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="EmpValue-AI"/></a><br>
+<a href="https://github.com/MS33834/miru-index" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=MS33834&repo=miru-index&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2&icon_color=4a6fa5&border_color=25335e" width="400" alt="miru-index"/></a><br>
 </div>
 <!-- TOP-REPOS-END -->
 
@@ -186,7 +186,7 @@ This profile repository is maintained by the following GitHub Actions:
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-22 05:11 UTC_
+_Last updated: 2026-06-22 08:11 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
