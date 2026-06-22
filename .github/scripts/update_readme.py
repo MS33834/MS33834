@@ -7,7 +7,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-README_FILES = [("README.md", "zh"), ("README.en.md", "en")]
+README_FILES = [("README.md", "en"), ("README.zh.md", "zh")]
 GITHUB_USER = "MS33834"
 CSDN_USER = "weixin_56622231"
 
