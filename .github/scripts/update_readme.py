@@ -180,33 +180,59 @@ def get_tech_stack():
         return "_Unable to fetch the tech stack right now._"
 
 
-def get_top_repos(limit=6):
-    """Fetch user's most starred repos, excluding the profile repo itself."""
+def fetch_starred_repos(limit=6):
+    """Fetch user's most starred non-fork repos, excluding the profile repo itself."""
     fetch_count = max(limit * 2, 10)
     url = f"https://api.github.com/users/{GITHUB_USER}/repos?sort=stargazers_count&order=desc&per_page={fetch_count}"
     try:
         text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
         repos = json.loads(text)
         filtered = [r for r in repos if r["name"].lower() != GITHUB_USER.lower() and not r.get("fork")]
-        filtered = filtered[:limit]
-        if not filtered:
-            return "_No public repositories found._"
-        lines = ['<div align="center">']
-        for r in filtered:
-            name = r["name"]
-            url_repo = r["html_url"]
-            lines.append(
-                f'<a href="{url_repo}" target="_blank">'
-                f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={GITHUB_USER}&repo={name}'
-                '&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2'
-                f'&icon_color=4a6fa5&border_color=25335e" width="400" alt="{name}"/>'
-                '</a><br>'
-            )
-        lines.append('</div>')
-        return "\n".join(lines)
+        return filtered[:limit]
     except Exception as e:
-        print(f"Top repos fetch failed: {e}")
-        return "_Unable to fetch repository data right now._"
+        print(f"Starred repos fetch failed: {e}")
+        return []
+
+
+def format_top_repos(repos):
+    """Generate pinned repo cards from repo list."""
+    if not repos:
+        return "_No public repositories found._"
+    lines = ['<div align="center">']
+    for r in repos:
+        name = r["name"]
+        url_repo = r["html_url"]
+        lines.append(
+            f'<a href="{url_repo}" target="_blank">'
+            f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={GITHUB_USER}&repo={name}'
+            '&theme=tokyonight&bg_color=050817&title_color=ffe9a8&text_color=c9d6f2'
+            f'&icon_color=4a6fa5&border_color=25335e" width="400" alt="{name}"/>'
+            '</a><br>'
+        )
+    lines.append('</div>')
+    return "\n".join(lines)
+
+
+def format_featured_repos(repos):
+    """Generate a markdown list of featured repos with descriptions and badges."""
+    if not repos:
+        return "_No public repositories found._"
+    lines = []
+    for r in repos:
+        name = r["name"]
+        url_repo = r["html_url"]
+        desc = (r.get("description") or "Original project by MS33834.").strip()
+        lines.append(f"### [{name}]({url_repo})")
+        lines.append("")
+        lines.append(f"{desc}")
+        lines.append("")
+        lines.append(
+            f"[![stars](https://img.shields.io/github/stars/{GITHUB_USER}/{name}?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)]({url_repo}) "
+            f"[![lang](https://img.shields.io/github/languages/top/{GITHUB_USER}/{name}?style=flat-square&color=4a6fa5&labelColor=050817)]({url_repo}) "
+            f"[![commit](https://img.shields.io/github/last-commit/{GITHUB_USER}/{name}?style=flat-square&color=c9d6f2&labelColor=050817)]({url_repo}/commits/main)"
+        )
+        lines.append("")
+    return "\n".join(lines)
 
 
 def get_user_stats():
@@ -269,7 +295,9 @@ def main():
     en_text, en_author = get_english_quote()
     zh_text, zh_source = get_chinese_quote()
     tech = get_tech_stack()
-    top = get_top_repos()
+    starred = fetch_starred_repos()
+    top_repos = format_top_repos(starred)
+    featured_repos = format_featured_repos(starred)
     public_repos, followers = get_user_stats()
     total_stars = get_total_stars()
 
@@ -304,9 +332,16 @@ def main():
 
         content = update_section(
             content,
+            "<!-- FEATURED-PROJECTS-START -->",
+            "<!-- FEATURED-PROJECTS-END -->",
+            featured_repos,
+        )
+
+        content = update_section(
+            content,
             "<!-- TOP-REPOS-START -->",
             "<!-- TOP-REPOS-END -->",
-            top,
+            top_repos,
         )
 
         content = update_section(

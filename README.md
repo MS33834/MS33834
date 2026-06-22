@@ -98,43 +98,46 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 
 ## Featured Projects
 
-Here are some original projects I'm maintaining or particularly proud of. Badges refresh automatically as repo state changes.
+The projects below are automatically picked from my public repositories and sorted by **stars**. They refresh every day at 16:00 UTC (00:00 CST) via `.github/workflows/update-readme.yml`.
 
-### [scholarhub](https://github.com/MS33834/scholarhub)
+<!-- FEATURED-PROJECTS-START -->
+### [EmpValue-AI](https://github.com/MS33834/EmpValue-AI)
 
-An open shelf of papers, books, and datasets for students (React + FastAPI)
+AI-powered toolkit for employee value assessment and talent analytics.
 
-[![stars](https://img.shields.io/github/stars/MS33834/scholarhub?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/scholarhub) [![lang](https://img.shields.io/github/languages/top/MS33834/scholarhub?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/scholarhub) [![commit](https://img.shields.io/github/last-commit/MS33834/scholarhub?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/scholarhub/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![commit](https://img.shields.io/github/last-commit/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
 
-### [autoship-cli](https://github.com/MS33834/autoship-cli)
+### [TutorLoop-AI](https://github.com/MS33834/TutorLoop-AI)
 
-Local-first intelligent delivery assistant
+AI tutoring system for personalized learning loops and adaptive education.
 
-[![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![commit](https://img.shields.io/github/last-commit/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/TutorLoop-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/TutorLoop-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/TutorLoop-AI?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/TutorLoop-AI) [![commit](https://img.shields.io/github/last-commit/MS33834/TutorLoop-AI?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/TutorLoop-AI/commits/main)
 
-### [taskflow](https://github.com/MS33834/taskflow)
+### [ProxieHub](https://github.com/MS33834/ProxieHub)
 
-Task management workflow
+Community-curated aggregator of free proxy/VPN tools and public node lists.
 
-[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/taskflow) [![commit](https://img.shields.io/github/last-commit/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/ProxieHub?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/ProxieHub) [![lang](https://img.shields.io/github/languages/top/MS33834/ProxieHub?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/ProxieHub) [![commit](https://img.shields.io/github/last-commit/MS33834/ProxieHub?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/ProxieHub/commits/main)
+
+### [miru-index](https://github.com/MS33834/miru-index)
+
+An index hub and discovery page for miru-related resources and projects.
+
+[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/miru-index) [![commit](https://img.shields.io/github/last-commit/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
+
+### [compass](https://github.com/MS33834/compass)
+
+A lightweight decision compass and navigation framework for projects.
+
+[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/compass) [![commit](https://img.shields.io/github/last-commit/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
 
 ### [urban-pulse](https://github.com/MS33834/urban-pulse)
 
-Intelligent analysis platform for Chinese urban economy
+Urban data pulse and visualization experiments for city insights.
 
 [![stars](https://img.shields.io/github/stars/MS33834/urban-pulse?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/urban-pulse) [![lang](https://img.shields.io/github/languages/top/MS33834/urban-pulse?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/urban-pulse) [![commit](https://img.shields.io/github/last-commit/MS33834/urban-pulse?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/urban-pulse/commits/main)
 
-### [financial-agent](https://github.com/MS33834/financial-agent)
-
-AI agent for financial data analysis and investment research
-
-[![stars](https://img.shields.io/github/stars/MS33834/financial-agent?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/financial-agent) [![lang](https://img.shields.io/github/languages/top/MS33834/financial-agent?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/financial-agent) [![commit](https://img.shields.io/github/last-commit/MS33834/financial-agent?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/financial-agent/commits/main)
-
-### [AI-SKILL](https://github.com/MS33834/AI-SKILL)
-
-Open-source index of AI agent skill repositories
-
-[![stars](https://img.shields.io/github/stars/MS33834/AI-SKILL?style=flat-square&color=ffe9a8&labelColor=050817&logo=github)](https://github.com/MS33834/AI-SKILL) [![lang](https://img.shields.io/github/languages/top/MS33834/AI-SKILL?style=flat-square&color=4a6fa5&labelColor=050817)](https://github.com/MS33834/AI-SKILL) [![commit](https://img.shields.io/github/last-commit/MS33834/AI-SKILL?style=flat-square&color=c9d6f2&labelColor=050817)](https://github.com/MS33834/AI-SKILL/commits/main)
+<!-- FEATURED-PROJECTS-END -->
 
 ### Repo Cards
 
@@ -183,7 +186,7 @@ This profile repository is maintained by the following GitHub Actions:
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-22 04:54 UTC_
+_Last updated: 2026-06-22 05:11 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
