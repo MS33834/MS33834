@@ -298,6 +298,76 @@ def format_last_updated(lang="zh"):
     return f"_{label}: {now}_"
 
 
+def get_recent_activity(limit=5):
+    """Fetch recent public GitHub events for the user."""
+    url = f"https://api.github.com/users/{GITHUB_USER}/events/public?per_page={limit * 2}"
+    try:
+        text = fetch(url, headers={"User-Agent": f"{GITHUB_USER}-readme-bot"})
+        events = json.loads(text)
+        return events[:limit]
+    except Exception as e:
+        print(f"Recent activity fetch failed: {e}")
+        return []
+
+
+def format_recent_activity(events, lang="en"):
+    """Format recent GitHub events to a markdown list."""
+    if not events:
+        return "_No recent public activity._"
+    lines = []
+    for e in events:
+        etype = e.get("type", "UnknownEvent")
+        repo = e.get("repo", {}).get("name", "unknown")
+        repo_url = f"https://github.com/{repo}"
+        created = e.get("created_at", "")[:10]
+        payload = e.get("payload", {})
+
+        if etype == "PushEvent":
+            ref = payload.get("ref", "").replace("refs/heads/", "")
+            msg = f"pushed to [{repo}]({repo_url})"
+            if ref:
+                msg += f" on branch `{ref}`"
+            icon = "🚀"
+        elif etype == "PullRequestEvent":
+            action = payload.get("action", "opened")
+            pr = payload.get("pull_request", {})
+            title = (pr.get("title") or "PR").split("\n")[0][:50]
+            msg = f"{action} pull request in [{repo}]({repo_url}): *{title}*"
+            icon = "🔀"
+        elif etype == "IssuesEvent":
+            action = payload.get("action", "opened")
+            issue = payload.get("issue", {})
+            title = (issue.get("title") or "issue").split("\n")[0][:50]
+            msg = f"{action} issue in [{repo}]({repo_url}): *{title}*"
+            icon = "🐛"
+        elif etype == "CreateEvent":
+            ref_type = payload.get("ref_type", "repository")
+            ref = payload.get("ref", "")
+            if ref_type == "repository":
+                msg = f"created repository [{repo}]({repo_url})"
+            else:
+                msg = f"created {ref_type} `{ref}` in [{repo}]({repo_url})"
+            icon = "✨"
+        elif etype == "DeleteEvent":
+            ref_type = payload.get("ref_type", "branch")
+            ref = payload.get("ref", "")
+            msg = f"deleted {ref_type} `{ref}` in [{repo}]({repo_url})"
+            icon = "🗑"
+        elif etype == "WatchEvent":
+            msg = f"starred [{repo}]({repo_url})"
+            icon = "⭐"
+        elif etype == "ForkEvent":
+            fork_repo = payload.get("forkee", {}).get("full_name", "a fork")
+            msg = f"forked [{repo}]({repo_url}) to `{fork_repo}`"
+            icon = "🍴"
+        else:
+            msg = f"{etype.replace('Event', '').lower()} in [{repo}]({repo_url})"
+            icon = "📝"
+
+        lines.append(f"- {icon} {msg} · `{created}`")
+    return "\n".join(lines)
+
+
 def update_section(content, marker_start, marker_end, new_content):
     """Replace content between markers."""
     pattern = re.compile(
@@ -318,6 +388,7 @@ def main():
     starred = fetch_starred_repos()
     top_repos = format_top_repos(starred)
     featured_repos = format_featured_repos(starred)
+    recent_activity = get_recent_activity()
     public_repos, followers = get_user_stats()
     total_stars = get_total_stars()
 
@@ -362,6 +433,13 @@ def main():
             "<!-- TOP-REPOS-START -->",
             "<!-- TOP-REPOS-END -->",
             top_repos,
+        )
+
+        content = update_section(
+            content,
+            "<!-- RECENT-ACTIVITY-START -->",
+            "<!-- RECENT-ACTIVITY-END -->",
+            format_recent_activity(recent_activity, lang),
         )
 
         content = update_section(

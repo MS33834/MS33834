@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-49-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-19-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-50-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -60,8 +60,8 @@
 <details>
 <summary>🌙 中文</summary>
 
-> 曾经拥有的东西失去了，并不代表会回到原来没有那种东西的时候。  
-> — 《白夜行》
+> 同是天涯沦落人，相逢何必曾相识。  
+> — 《琵琶行》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -164,6 +164,18 @@ An index hub and discovery page for miru-related resources and projects.
 
 ## 贡献与活动 / Activity
 
+### 最近动态 / Recent Activity
+
+> 根据我的公开 GitHub 事件自动更新。
+
+<!-- RECENT-ACTIVITY-START -->
+- 🚀 pushed to [MS33834/financial-agent](https://github.com/MS33834/financial-agent) on branch `main` · `2026-06-22`
+- 🚀 pushed to [MS33834/MS33834](https://github.com/MS33834/MS33834) on branch `main` · `2026-06-22`
+- ✨ created branch `main` in [MS33834/aegisvault](https://github.com/MS33834/aegisvault) · `2026-06-22`
+- 🚀 pushed to [MS33834/autoship-cli](https://github.com/MS33834/autoship-cli) on branch `main` · `2026-06-22`
+- 🚀 pushed to [MS33834/AI-SKILL](https://github.com/MS33834/AI-SKILL) on branch `main` · `2026-06-22`
+<!-- RECENT-ACTIVITY-END -->
+
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MS33834&theme=tokyo-night&bg_color=050817&color=c9d6f2&line=ffe9a8&point=4a6fa5&area=true&hide_border=true" alt="Activity Graph" width="100%" style="max-width: 860px;"/>
@@ -187,12 +199,12 @@ An index hub and discovery page for miru-related resources and projects.
 
 | 工作流 | 触发方式 | 作用 |
 |---|---|---|
-| [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | 每天 UTC 16:00 + 手动触发 | 自动同步 CSDN 最新文章、每日名言、技术栈图标、仓库卡片排序、动态统计徽章 |
+| [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | 每天 UTC 16:00 + 手动触发 | 自动同步 CSDN 最新文章、每日名言、技术栈图标、精选项目、最近动态、仓库卡片、动态统计徽章 |
 | [`.github/workflows/snake.yml`](.github/workflows/snake.yml) | 每天 UTC 16:00 + 手动触发 | 生成并更新贡献贪吃蛇 SVG |
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | 每 12 小时 + 手动触发 | 自动把所有列出的仓库镜像同步到 [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-22 08:11 UTC_
+_最后更新 / Last updated: 2026-06-22 08:39 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---

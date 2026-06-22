@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-18-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-49-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-19-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-50-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -158,6 +158,18 @@ The cards below are **auto-sorted by stars and updated daily at 16:00 UTC (00:00
 
 ## Activity
 
+### Recent Activity
+
+> Auto-updated from my latest public GitHub events.
+
+<!-- RECENT-ACTIVITY-START -->
+- 🚀 pushed to [MS33834/financial-agent](https://github.com/MS33834/financial-agent) on branch `main` · `2026-06-22`
+- 🚀 pushed to [MS33834/MS33834](https://github.com/MS33834/MS33834) on branch `main` · `2026-06-22`
+- ✨ created branch `main` in [MS33834/aegisvault](https://github.com/MS33834/aegisvault) · `2026-06-22`
+- 🚀 pushed to [MS33834/autoship-cli](https://github.com/MS33834/autoship-cli) on branch `main` · `2026-06-22`
+- 🚀 pushed to [MS33834/AI-SKILL](https://github.com/MS33834/AI-SKILL) on branch `main` · `2026-06-22`
+<!-- RECENT-ACTIVITY-END -->
+
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MS33834&theme=tokyo-night&bg_color=050817&color=c9d6f2&line=ffe9a8&point=4a6fa5&area=true&hide_border=true" alt="Activity Graph" width="100%" style="max-width: 860px;"/>
@@ -181,12 +193,12 @@ This profile repository is maintained by the following GitHub Actions:
 
 | Workflow | Trigger | Purpose |
 |---|---|---|
-| [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | Daily at 16:00 UTC + manual | Sync latest CSDN articles, daily quote, tech stack icons, repo card order, dynamic stat badges |
+| [`.github/workflows/update-readme.yml`](.github/workflows/update-readme.yml) | Daily at 16:00 UTC + manual | Sync latest CSDN articles, daily quote, tech stack icons, featured repos, recent activity, repo cards, dynamic stat badges |
 | [`.github/workflows/snake.yml`](.github/workflows/snake.yml) | Daily at 16:00 UTC + manual | Generate and update the contribution snake SVG |
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-22 08:11 UTC_
+_Last updated: 2026-06-22 08:39 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
