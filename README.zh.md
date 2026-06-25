@@ -40,11 +40,11 @@
 ## 最新文章 / Latest Articles
 
 <!-- CSDN-POSTS-START -->
-1. [毕业设计选题指南：计算机与软件专业项目实战拆解](https://blog.csdn.net/weixin_56622231/article/details/162280231) · `2026-06-24`
-2. [从Copilot到Agent：我的开发工作流正在被颠覆](https://blog.csdn.net/weixin_56622231/article/details/162246973) · `2026-06-24`
-3. [后端/数据库方向面试必备：这些开源项目让你脱颖而出](https://blog.csdn.net/weixin_56622231/article/details/162246869) · `2026-06-23`
-4. [大数据专业《数据分析》期末考试冲刺指南（万字长文）](https://blog.csdn.net/weixin_56622231/article/details/162241824) · `2026-06-23`
-5. [2026年最火的AI开源项目深度解析：它们为何引爆开发者社区？](https://blog.csdn.net/weixin_56622231/article/details/162210579) · `2026-06-22`
+1. [数学建模从入门到实战：全方位知识点拆解与往年赛题精讲](https://blog.csdn.net/weixin_56622231/article/details/162303578) · `2026-06-25`
+2. [Codex++ 安全边界深度剖析：从可怕攻击案例到下一代防御蓝图](https://blog.csdn.net/weixin_56622231/article/details/162280305) · `2026-06-25`
+3. [毕业设计选题指南：计算机与软件专业项目实战拆解](https://blog.csdn.net/weixin_56622231/article/details/162280231) · `2026-06-24`
+4. [从Copilot到Agent：我的开发工作流正在被颠覆](https://blog.csdn.net/weixin_56622231/article/details/162246973) · `2026-06-24`
+5. [后端/数据库方向面试必备：这些开源项目让你脱颖而出](https://blog.csdn.net/weixin_56622231/article/details/162246869) · `2026-06-23`
 <!-- CSDN-POSTS-END -->
 
 [→ 查看更多文章](https://blog.csdn.net/weixin_56622231)
@@ -54,14 +54,14 @@
 ## 每日一言 / Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **You're on earth. There's no cure for that.**  
-> — Samuel Beckett
+> **The best fighter is never angry.**  
+> — Lao Tzu
 
 <details>
 <summary>🌙 中文</summary>
 
-> 如果自己不想积极认真地生活，不管得到什么样的回答都没用。  
-> — 《解忧杂货店》
+> 踏向还未知的深渊，去寻找诡谲的答案。  
+> — 《盗墓笔记·无尽人间》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -109,9 +109,9 @@
 <!-- FEATURED-PROJECTS-START -->
 ### [autoship-cli](https://github.com/MS33834/autoship-cli)
 
-A CLI toolkit for automating shipping, deployment, and release workflows.
+Local-first intelligent delivery assistant — automated clean, verify, commit, and upload workflows powered by AI
 
-[![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/autoship-cli) [![forks](https://img.shields.io/github/forks/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/autoship-cli) [![watchers](https://img.shields.io/github/watchers/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![updated](https://img.shields.io/badge/updated-2026-06-24-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/autoship-cli?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/autoship-cli) [![forks](https://img.shields.io/github/forks/MS33834/autoship-cli?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/autoship-cli) [![watchers](https://img.shields.io/github/watchers/MS33834/autoship-cli?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/autoship-cli) [![lang](https://img.shields.io/github/languages/top/MS33834/autoship-cli?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/autoship-cli) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/autoship-cli/commits/main)
 
 ### [AI-SKILL](https://github.com/MS33834/AI-SKILL)
 
@@ -129,19 +129,19 @@ A task and workflow management system with scheduling and automation.
 
 A lightweight decision compass and navigation framework for projects.
 
-[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/compass) [![forks](https://img.shields.io/github/forks/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/compass) [![watchers](https://img.shields.io/github/watchers/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/compass) [![updated](https://img.shields.io/badge/updated-2026-06-24-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/compass) [![forks](https://img.shields.io/github/forks/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/compass) [![watchers](https://img.shields.io/github/watchers/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/compass) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
 
 ### [EmpValue-AI](https://github.com/MS33834/EmpValue-AI)
 
 AI-powered toolkit for employee value assessment and talent analytics.
 
-[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-24-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
 
 ### [miru-index](https://github.com/MS33834/miru-index)
 
 An index hub and discovery page for miru-related resources and projects.
 
-[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/miru-index) [![forks](https://img.shields.io/github/forks/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/miru-index) [![watchers](https://img.shields.io/github/watchers/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/miru-index) [![updated](https://img.shields.io/badge/updated-2026-06-24-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/miru-index) [![forks](https://img.shields.io/github/forks/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/miru-index) [![watchers](https://img.shields.io/github/watchers/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/miru-index) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
 
 <!-- FEATURED-PROJECTS-END -->
 
@@ -169,11 +169,11 @@ An index hub and discovery page for miru-related resources and projects.
 > 根据我的公开 GitHub 事件自动更新。
 
 <!-- RECENT-ACTIVITY-START -->
-- 🚀 pushed to [MS33834/EmpValue-AI](https://github.com/MS33834/EmpValue-AI) on branch `main` · `2026-06-24`
-- 🚀 pushed to [MS33834/EmpValue-AI](https://github.com/MS33834/EmpValue-AI) on branch `main` · `2026-06-24`
-- 🚀 pushed to [MS33834/miru-index](https://github.com/MS33834/miru-index) on branch `main` · `2026-06-24`
-- 🚀 pushed to [MS33834/aegisvault](https://github.com/MS33834/aegisvault) on branch `main` · `2026-06-24`
-- 🚀 pushed to [MS33834/TutorLoop-AI](https://github.com/MS33834/TutorLoop-AI) on branch `main` · `2026-06-24`
+- ⭐ starred [opendilab/LightRFT](https://github.com/opendilab/LightRFT) · `2026-06-24`
+- 🚀 pushed to [MS33834/urban-pulse](https://github.com/MS33834/urban-pulse) on branch `main` · `2026-06-25`
+- 🚀 pushed to [MS33834/DU](https://github.com/MS33834/DU) on branch `main` · `2026-06-25`
+- 🚀 pushed to [MS33834/urban-pulse](https://github.com/MS33834/urban-pulse) on branch `main` · `2026-06-25`
+- 🚀 pushed to [MS33834/ProxieHub](https://github.com/MS33834/ProxieHub) on branch `main` · `2026-06-25`
 <!-- RECENT-ACTIVITY-END -->
 
 <div align="center">
@@ -204,7 +204,7 @@ An index hub and discovery page for miru-related resources and projects.
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | 每 12 小时 + 手动触发 | 自动把所有列出的仓库镜像同步到 [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-24 21:13 UTC_
+_最后更新 / Last updated: 2026-06-25 21:19 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
