@@ -56,8 +56,8 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 ## Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **The best fighter is never angry.**  
-> — Lao Tzu
+> **It is dangerous to be right in matters on which the established authorities are wrong.**  
+> — Voltaire
 <!-- DAILY-QUOTE-END -->
 
 ---
@@ -117,25 +117,25 @@ A curated collection of AI skills, agents, and prompt engineering experiments.
 
 A task and workflow management system with scheduling and automation.
 
-[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/taskflow) [![forks](https://img.shields.io/github/forks/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/taskflow) [![watchers](https://img.shields.io/github/watchers/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/taskflow) [![updated](https://img.shields.io/badge/updated-2026-06-24-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/taskflow) [![forks](https://img.shields.io/github/forks/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/taskflow) [![watchers](https://img.shields.io/github/watchers/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/taskflow) [![updated](https://img.shields.io/badge/updated-2026-06-26-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
 
 ### [compass](https://github.com/MS33834/compass)
 
 A lightweight decision compass and navigation framework for projects.
 
-[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/compass) [![forks](https://img.shields.io/github/forks/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/compass) [![watchers](https://img.shields.io/github/watchers/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/compass) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/compass?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/compass) [![forks](https://img.shields.io/github/forks/MS33834/compass?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/compass) [![watchers](https://img.shields.io/github/watchers/MS33834/compass?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/compass) [![lang](https://img.shields.io/github/languages/top/MS33834/compass?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/compass) [![updated](https://img.shields.io/badge/updated-2026-06-26-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/compass/commits/main)
 
 ### [EmpValue-AI](https://github.com/MS33834/EmpValue-AI)
 
 AI-powered toolkit for employee value assessment and talent analytics.
 
-[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-26-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
 
 ### [miru-index](https://github.com/MS33834/miru-index)
 
 An index hub and discovery page for miru-related resources and projects.
 
-[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/miru-index) [![forks](https://img.shields.io/github/forks/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/miru-index) [![watchers](https://img.shields.io/github/watchers/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/miru-index) [![updated](https://img.shields.io/badge/updated-2026-06-25-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/miru-index?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/miru-index) [![forks](https://img.shields.io/github/forks/MS33834/miru-index?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/miru-index) [![watchers](https://img.shields.io/github/watchers/MS33834/miru-index?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/miru-index) [![lang](https://img.shields.io/github/languages/top/MS33834/miru-index?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/miru-index) [![updated](https://img.shields.io/badge/updated-2026-06-26-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/miru-index/commits/main)
 
 <!-- FEATURED-PROJECTS-END -->
 
@@ -163,11 +163,11 @@ The cards below are **auto-sorted by stars and updated daily at 16:00 UTC (00:00
 > Auto-updated from my latest public GitHub events.
 
 <!-- RECENT-ACTIVITY-START -->
-- ⭐ starred [opendilab/LightRFT](https://github.com/opendilab/LightRFT) · `2026-06-24`
-- 🚀 pushed to [MS33834/urban-pulse](https://github.com/MS33834/urban-pulse) on branch `main` · `2026-06-25`
-- 🚀 pushed to [MS33834/DU](https://github.com/MS33834/DU) on branch `main` · `2026-06-25`
-- 🚀 pushed to [MS33834/urban-pulse](https://github.com/MS33834/urban-pulse) on branch `main` · `2026-06-25`
-- 🚀 pushed to [MS33834/ProxieHub](https://github.com/MS33834/ProxieHub) on branch `main` · `2026-06-25`
+- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-26`
+- 🚀 pushed to [MS33834/financial-agent](https://github.com/MS33834/financial-agent) on branch `main` · `2026-06-26`
+- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-26`
+- 🚀 pushed to [MS33834/financial-agent](https://github.com/MS33834/financial-agent) on branch `main` · `2026-06-26`
+- 🚀 pushed to [MS33834/scholarhub](https://github.com/MS33834/scholarhub) on branch `main` · `2026-06-26`
 <!-- RECENT-ACTIVITY-END -->
 
 <div align="center">
@@ -198,7 +198,7 @@ This profile repository is maintained by the following GitHub Actions:
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-25 21:19 UTC_
+_Last updated: 2026-06-26 21:09 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
