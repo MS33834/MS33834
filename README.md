@@ -42,11 +42,7 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 > My latest CSDN articles (mostly in Chinese):
 
 <!-- CSDN-POSTS-START -->
-1. [数学建模从入门到实战：全方位知识点拆解与往年赛题精讲](https://blog.csdn.net/weixin_56622231/article/details/162303578) · `2026-06-25`
-2. [Codex++ 安全边界深度剖析：从可怕攻击案例到下一代防御蓝图](https://blog.csdn.net/weixin_56622231/article/details/162280305) · `2026-06-25`
-3. [毕业设计选题指南：计算机与软件专业项目实战拆解](https://blog.csdn.net/weixin_56622231/article/details/162280231) · `2026-06-24`
-4. [从Copilot到Agent：我的开发工作流正在被颠覆](https://blog.csdn.net/weixin_56622231/article/details/162246973) · `2026-06-24`
-5. [后端/数据库方向面试必备：这些开源项目让你脱颖而出](https://blog.csdn.net/weixin_56622231/article/details/162246869) · `2026-06-23`
+_Unable to fetch the latest articles right now. Please check back later._
 <!-- CSDN-POSTS-END -->
 
 [→ More articles](https://blog.csdn.net/weixin_56622231)
@@ -56,8 +52,8 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 ## Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **It is dangerous to be right in matters on which the established authorities are wrong.**  
-> — Voltaire
+> **Do Something. If it works, do more of it. If it doesn't, do something else.**  
+> — Franklin D. Roosevelt
 <!-- DAILY-QUOTE-END -->
 
 ---
@@ -117,7 +113,7 @@ A curated collection of AI skills, agents, and prompt engineering experiments.
 
 A task and workflow management system with scheduling and automation.
 
-[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/taskflow) [![forks](https://img.shields.io/github/forks/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/taskflow) [![watchers](https://img.shields.io/github/watchers/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/taskflow) [![updated](https://img.shields.io/badge/updated-2026-06-26-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/taskflow?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/taskflow) [![forks](https://img.shields.io/github/forks/MS33834/taskflow?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/taskflow) [![watchers](https://img.shields.io/github/watchers/MS33834/taskflow?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/taskflow) [![lang](https://img.shields.io/github/languages/top/MS33834/taskflow?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/taskflow) [![updated](https://img.shields.io/badge/updated-2026-06-27-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/taskflow/commits/main)
 
 ### [compass](https://github.com/MS33834/compass)
 
@@ -129,7 +125,7 @@ A lightweight decision compass and navigation framework for projects.
 
 AI-powered toolkit for employee value assessment and talent analytics.
 
-[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-26-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
+[![stars](https://img.shields.io/github/stars/MS33834/EmpValue-AI?style=flat-square&color=ffe9a8&labelColor=050817&logo=github&label=%E2%AD%90)](https://github.com/MS33834/EmpValue-AI) [![forks](https://img.shields.io/github/forks/MS33834/EmpValue-AI?style=flat-square&color=c9d6f2&labelColor=050817&logo=github&label=%F0%9F%8D%B4)](https://github.com/MS33834/EmpValue-AI) [![watchers](https://img.shields.io/github/watchers/MS33834/EmpValue-AI?style=flat-square&color=4a6fa5&labelColor=050817&logo=github&label=%F0%9F%91%81)](https://github.com/MS33834/EmpValue-AI) [![lang](https://img.shields.io/github/languages/top/MS33834/EmpValue-AI?style=flat-square&color=8fa4d3&labelColor=050817)](https://github.com/MS33834/EmpValue-AI) [![updated](https://img.shields.io/badge/updated-2026-06-27-6b7fa3?style=flat-square&labelColor=050817)](https://github.com/MS33834/EmpValue-AI/commits/main)
 
 ### [miru-index](https://github.com/MS33834/miru-index)
 
@@ -163,11 +159,11 @@ The cards below are **auto-sorted by stars and updated daily at 16:00 UTC (00:00
 > Auto-updated from my latest public GitHub events.
 
 <!-- RECENT-ACTIVITY-START -->
-- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-26`
-- 🚀 pushed to [MS33834/financial-agent](https://github.com/MS33834/financial-agent) on branch `main` · `2026-06-26`
-- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-26`
-- 🚀 pushed to [MS33834/financial-agent](https://github.com/MS33834/financial-agent) on branch `main` · `2026-06-26`
-- 🚀 pushed to [MS33834/scholarhub](https://github.com/MS33834/scholarhub) on branch `main` · `2026-06-26`
+- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/EmpValue-AI](https://github.com/MS33834/EmpValue-AI) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/taskflow](https://github.com/MS33834/taskflow) on branch `main` · `2026-06-27`
 <!-- RECENT-ACTIVITY-END -->
 
 <div align="center">
@@ -198,7 +194,7 @@ This profile repository is maintained by the following GitHub Actions:
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-26 21:09 UTC_
+_Last updated: 2026-06-27 20:02 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
