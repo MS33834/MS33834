@@ -12,7 +12,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=MS33834&color=050817&style=flat-square&label=views)](https://github.com/MS33834)
 
 <!-- PROFILE-BADGES-START -->
-<img src="https://img.shields.io/badge/Public%20Repos-21-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-61-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
+<img src="https://img.shields.io/badge/Public%20Repos-20-4a6fa5?style=flat-square&labelColor=050817" alt="public repos"/> <img src="https://img.shields.io/badge/Total%20Stars-61-ffe9a8?style=flat-square&labelColor=050817" alt="total stars"/> <img src="https://img.shields.io/badge/Followers-2-c9d6f2?style=flat-square&labelColor=050817" alt="followers"/>
 <!-- PROFILE-BADGES-END -->
 
 <br>
@@ -42,7 +42,11 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 > My latest CSDN articles (mostly in Chinese):
 
 <!-- CSDN-POSTS-START -->
-_Unable to fetch the latest articles right now. Please check back later._
+1. [Python开发实习生指南：简历投递、实习内容与个人项目的本质区别](https://blog.csdn.net/weixin_56622231/article/details/162397211) · `2026-06-28`
+2. [万字长文详解：vLLM 本地部署完整教程、核心优势对比与实战排错指南](https://blog.csdn.net/weixin_56622231/article/details/162397121) · `2026-06-28`
+3. [软硬结合机器人开源项目推荐：从学习到实战](https://blog.csdn.net/weixin_56622231/article/details/162397015) · `2026-06-28`
+4. [数据挖掘回归分析80道填空题（含答案与解悉）](https://blog.csdn.net/weixin_56622231/article/details/162396603) · `2026-06-28`
+5. [数据挖掘课程期末填空测试（150题）](https://blog.csdn.net/weixin_56622231/article/details/162376216) · `2026-06-28`
 <!-- CSDN-POSTS-END -->
 
 [→ More articles](https://blog.csdn.net/weixin_56622231)
@@ -52,8 +56,8 @@ _Unable to fetch the latest articles right now. Please check back later._
 ## Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **Do Something. If it works, do more of it. If it doesn't, do something else.**  
-> — Franklin D. Roosevelt
+> **Truth is the offspring of silence and meditation.**  
+> — Isaac Newton
 <!-- DAILY-QUOTE-END -->
 
 ---
@@ -159,10 +163,10 @@ The cards below are **auto-sorted by stars and updated daily at 16:00 UTC (00:00
 > Auto-updated from my latest public GitHub events.
 
 <!-- RECENT-ACTIVITY-START -->
-- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-27`
-- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-27`
-- 🚀 pushed to [MS33834/KeBaiPay](https://github.com/MS33834/KeBaiPay) on branch `main` · `2026-06-27`
 - 🚀 pushed to [MS33834/EmpValue-AI](https://github.com/MS33834/EmpValue-AI) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/taskflow](https://github.com/MS33834/taskflow) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/taskflow](https://github.com/MS33834/taskflow) on branch `main` · `2026-06-27`
+- 🚀 pushed to [MS33834/ProxieHub](https://github.com/MS33834/ProxieHub) on branch `main` · `2026-06-27`
 - 🚀 pushed to [MS33834/taskflow](https://github.com/MS33834/taskflow) on branch `main` · `2026-06-27`
 <!-- RECENT-ACTIVITY-END -->
 
@@ -194,7 +198,7 @@ This profile repository is maintained by the following GitHub Actions:
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-27 20:02 UTC_
+_Last updated: 2026-06-28 20:22 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
