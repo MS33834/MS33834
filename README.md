@@ -42,11 +42,11 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 > My latest CSDN articles (mostly in Chinese):
 
 <!-- CSDN-POSTS-START -->
-1. [向量代数与空间解析几何核心考点精练](https://blog.csdn.net/weixin_56622231/article/details/162431269) · `2026-06-29`
-2. [数据挖掘期末考试常考计算](https://blog.csdn.net/weixin_56622231/article/details/162420396) · `2026-06-29`
-3. [Python Pandas基础100题精练及详解](https://blog.csdn.net/weixin_56622231/article/details/162419999) · `2026-06-29`
-4. [GitHub QQ机器人项目开发实践解析](https://blog.csdn.net/weixin_56622231/article/details/162419660) · `2026-06-29`
-5. [Python开发实习生指南：简历投递、实习内容与个人项目的本质区别](https://blog.csdn.net/weixin_56622231/article/details/162397211) · `2026-06-28`
+1. [Python数据挖掘核心考点精解期末考试模拟卷](https://blog.csdn.net/weixin_56622231/article/details/162439479) · `2026-06-30`
+2. [Python数据分析期末试题及详解](https://blog.csdn.net/weixin_56622231/article/details/162439148) · `2026-06-30`
+3. [Python数据分析课程期末考试判断题联系题100题](https://blog.csdn.net/weixin_56622231/article/details/162438993) · `2026-06-30`
+4. [向量代数与空间解析几何核心考点精练](https://blog.csdn.net/weixin_56622231/article/details/162431269) · `2026-06-29`
+5. [数据挖掘期末考试常考计算](https://blog.csdn.net/weixin_56622231/article/details/162420396) · `2026-06-29`
 <!-- CSDN-POSTS-END -->
 
 [→ More articles](https://blog.csdn.net/weixin_56622231)
@@ -56,8 +56,8 @@ Hi, I'm **badhope** (GitHub: [@MS33834](https://github.com/MS33834)).
 ## Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **All leaders are readers.**  
-> — Jim Rohn
+> **To create more positive results in your life, replace 'if only' with 'next time'.**  
+> — Celestine Chua
 <!-- DAILY-QUOTE-END -->
 
 ---
@@ -198,7 +198,7 @@ This profile repository is maintained by the following GitHub Actions:
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | Every 12 hours + manual | Mirror all listed repositories to [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_Last updated: 2026-06-29 21:13 UTC_
+_Last updated: 2026-06-30 21:20 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---

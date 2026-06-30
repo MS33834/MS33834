@@ -40,11 +40,11 @@
 ## 最新文章 / Latest Articles
 
 <!-- CSDN-POSTS-START -->
-1. [向量代数与空间解析几何核心考点精练](https://blog.csdn.net/weixin_56622231/article/details/162431269) · `2026-06-29`
-2. [数据挖掘期末考试常考计算](https://blog.csdn.net/weixin_56622231/article/details/162420396) · `2026-06-29`
-3. [Python Pandas基础100题精练及详解](https://blog.csdn.net/weixin_56622231/article/details/162419999) · `2026-06-29`
-4. [GitHub QQ机器人项目开发实践解析](https://blog.csdn.net/weixin_56622231/article/details/162419660) · `2026-06-29`
-5. [Python开发实习生指南：简历投递、实习内容与个人项目的本质区别](https://blog.csdn.net/weixin_56622231/article/details/162397211) · `2026-06-28`
+1. [Python数据挖掘核心考点精解期末考试模拟卷](https://blog.csdn.net/weixin_56622231/article/details/162439479) · `2026-06-30`
+2. [Python数据分析期末试题及详解](https://blog.csdn.net/weixin_56622231/article/details/162439148) · `2026-06-30`
+3. [Python数据分析课程期末考试判断题联系题100题](https://blog.csdn.net/weixin_56622231/article/details/162438993) · `2026-06-30`
+4. [向量代数与空间解析几何核心考点精练](https://blog.csdn.net/weixin_56622231/article/details/162431269) · `2026-06-29`
+5. [数据挖掘期末考试常考计算](https://blog.csdn.net/weixin_56622231/article/details/162420396) · `2026-06-29`
 <!-- CSDN-POSTS-END -->
 
 [→ 查看更多文章](https://blog.csdn.net/weixin_56622231)
@@ -54,14 +54,14 @@
 ## 每日一言 / Daily Quote
 
 <!-- DAILY-QUOTE-START -->
-> **All leaders are readers.**  
-> — Jim Rohn
+> **To create more positive results in your life, replace 'if only' with 'next time'.**  
+> — Celestine Chua
 
 <details>
 <summary>🌙 中文</summary>
 
-> 江流天地外，山色有无中。  
-> — 《汉江临泛 / 汉江临眺》
+> 愿人们的爱恨为你加冕  
+> — 《郭敬明》
 
 </details>
 <!-- DAILY-QUOTE-END -->
@@ -204,7 +204,7 @@ An index hub and discovery page for miru-related resources and projects.
 | [`.github/workflows/sync-to-gitcode.yml`](.github/workflows/sync-to-gitcode.yml) | 每 12 小时 + 手动触发 | 自动把所有列出的仓库镜像同步到 [GitCode](https://gitcode.com/badhope) |
 
 <!-- LAST-UPDATED-START -->
-_最后更新 / Last updated: 2026-06-29 21:13 UTC_
+_最后更新 / Last updated: 2026-06-30 21:20 UTC_
 <!-- LAST-UPDATED-END -->
 
 ---
